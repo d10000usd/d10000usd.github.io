@@ -195,7 +195,7 @@ h1 {
   margin: 0mm;
   border-left: 5px solid rgb(32, 138, 64);
   background-color: #5cb85c;
-  background: #ffffff;
+  /* background: #ffffff; */
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
