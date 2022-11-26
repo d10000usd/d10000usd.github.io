@@ -203,7 +203,21 @@ h1 {
   padding-right: 60px;
 }
 h2,
-h3,
+h3 {
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  position: relative;
+  color: #368142;
+  left: 0;
+  height: 20%;
+  margin: 0mm;
+  border-left: 5px solid rgb(255, 255, 255);
+  background-color: #ffffff;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  padding-right: 30px;
+}
 h4,
 h5,
 h6 {
@@ -219,7 +233,7 @@ h2 {
   font-size: 1.375em;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 0.85em;
 }
 h4 {
   font-size: 1.125em;
