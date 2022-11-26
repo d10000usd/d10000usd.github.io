@@ -187,7 +187,19 @@ body {
     padding-right: 0 !important;
   }
 }
-h1,
+h1{
+  position: relative;
+  color: #3a3a3a;
+  left: 0;
+  height: 20%;
+  margin: 0mm;
+  border-left: 5px solid rgb(32, 138, 64);
+  background: #ffffff;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  padding-right: 60px;
+}
 h2,
 h3,
 h4,
@@ -249,8 +261,9 @@ hr {
   margin: 40px 0;
 }
 blockquote {
-  border-left: 4px solid #ddd;
+  border-left: 4px solid rgb(127, 7, 7);
   color: var(--blockquote-color);
+  background-color: aquamarine;
   margin: 0;
   padding: 0 15px;
 }
