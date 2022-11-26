@@ -189,28 +189,22 @@ body {
 }
 h1{
   font-size: 1.5em;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+
+
+  padding: 12px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  position: relative;
+  color: #3a3a3a;
+  left: 0;
+  height: 1%;
+  margin: 4mm;
+  border-left: 5px solid rgb(32, 138, 64);
+  background: #ffffff;
 
 }
-
-h2{
-  font-size: 1.5em;
-
-}
-h3{
-font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-
-/*
-padding: 12px 15px;
-margin-top: 110px;
-margin-bottom: 110px; */
-
-position: relative;
-color: #3a3a3a;
-left: 0;
-height: 1%;
-margin: 4mm;
-border-left: 5px solid rgb(32, 138, 64);
-background: #ffffff;}
 
 
 h1 {
@@ -266,10 +260,14 @@ hr {
 }
 blockquote {
   /* border-left: 4px solid #ddd;
-  color: var(--blockquote-color);
-  margin: 0;
-  padding: 0 15px; */
+  color: var(--blockquote-color); */
+
+
   border-left: 5px solid #dd0d0d;
+  background-color: #3e999f;
+  margin: 0;
+  padding: 0 15px;
+
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
