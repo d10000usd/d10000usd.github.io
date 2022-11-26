@@ -258,7 +258,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-11-26 14:05:03 / Modified: 14:19:41" itemprop="dateCreated datePublished" datetime="2022-11-26T14:05:03+09:00">2022-11-26</time>
+              <time title="Created: 2022-11-26 14:05:03 / Modified: 14:27:09" itemprop="dateCreated datePublished" datetime="2022-11-26T14:05:03+09:00">2022-11-26</time>
             </span>
 
           
@@ -272,7 +272,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="기사-검색"><a href="#기사-검색" class="headerlink" title="기사 검색"></a>기사 검색</h1><ul>
+          <h1 id="기사-검색"><a href="#기사-검색" class="headerlink" title="기사 검색"></a>기사 검색</h1><blockquote>
+<p>사람일때 이런다<br>quote</p>
+</blockquote>
+<ul>
 <li><p>사람일때</p>
 <pre><code>  * 사람 - 내용1 - 내용2
   * 연예기사면을 사용
@@ -292,7 +295,13 @@
 </code></pre>
 </li>
 </ul>
-<h1 id="데이터-파일-만들고"><a href="#데이터-파일-만들고" class="headerlink" title="데이터 파일 만들고"></a>데이터 파일 만들고</h1><h2 id="네이버-용도"><a href="#네이버-용도" class="headerlink" title="* 네이버 용도"></a>* 네이버 용도</h2><ul>
+<h1 id="데이터-파일-만들고"><a href="#데이터-파일-만들고" class="headerlink" title="데이터 파일 만들고"></a>데이터 파일 만들고</h1><h2 id="네이버-용도"><a href="#네이버-용도" class="headerlink" title="* 네이버 용도"></a>* 네이버 용도</h2><blockquote>
+<p>thoor<br>  aasdfasdfasdf<br>  asdfasdf<br>asdfasdf</p>
+</blockquote>
+<p>  asdfasdf</p>
+<pre><code>asdfasdf
+</code></pre>
+<ul>
 <li><p>마크다운</p>
 <ul>
 <li>기본폼만 사용<ul>
@@ -442,10 +451,18 @@
 </li>
 <li><p>Architecture : app -&gt; redis -&gt; worker(py,web) -&gt; db -&gt; node,vue3</p>
 <ul>
-<li>docker compos<br>‘’’<br>    &#x2F;&#x2F;version is now using “compose spec”<br>    &#x2F;&#x2F;v2 and v3 are now combined!<br>    &#x2F;&#x2F;docker-compose v1.27+ required<br><br>        services:<br>        working:<br>            build: .&#x2F;working<br>            # use python rather than gunicorn for local dev<br>            command: python app.py<br>            depends_on:<br>            redis:<br>                condition: service_check<br>            volumes:<br>            - .&#x2F;working:&#x2F;app<br>            ports:<br>            - “5742:80”<br>            networks:<br>            - front-tier<br>            - back-tier<br><br>        result:<br>            build: .&#x2F;result<br>            # use nodemon rather than node for local dev<br>            command: nodemon server.js<br>            depends_on:<br>            db:<br>                condition: service_check<br>            volumes:<br>            - .&#x2F;result:&#x2F;app<br>            ports:<br>            - “5001:80”<br>            - “5858:5858”<br>            networks:<br>            - front-tier<br>            - back-tier<br><br>        worker:<br>            build:<br>            context: .&#x2F;worker<br>            depends_on:<br>            redis:<br>                condition: service_check<br>            db:<br>                condition: service_check<br>            networks:<br>            - back-tier<br><br>        redis:<br>            image: redis:5.0-alpine3.10<br>            volumes:<br>            - “.&#x2F;statuschecks:&#x2F;statuschecks”<br>            statuscheck:<br>            test: &#x2F;statuschecks&#x2F;redis.sh<br>            interval: “5s”<br>            ports: [“6379”]<br>            networks:<br>            - back-tier<br><br>        db:<br>            image: postgres:9.4<br>            environment:<br>            POSTGRES_USER: “postgres”<br>            POSTGRES_PASSWORD: “postgres”<br>            volumes:<br>            - “db-data:&#x2F;var&#x2F;lib&#x2F;postgresql&#x2F;data”<br>            - “.&#x2F;statuschecks:&#x2F;statuschecks”<br>            statuscheck:<br>            test: &#x2F;statuschecks&#x2F;postgres.sh<br>            interval: “5s”<br>            networks:<br>            - back-tier<br><br>        volumes:<br>        db-data:<br><br>        networks:<br>        front-tier:<br>        back-tier:<br><br>‘’’</li>
+<li>docker compos</li>
 </ul>
 </li>
 </ul>
+<p>‘’’<br>&#x2F;&#x2F;version is now using “compose spec”<br>&#x2F;&#x2F;v2 and v3 are now combined!<br>&#x2F;&#x2F;docker-compose v1.27+ required</p>
+<p>services:<br>working:<br>    build: .&#x2F;working<br>    # use python rather than gunicorn for local dev<br>    command: python app.py<br>    depends_on:<br>    redis:<br>        condition: service_check<br>    volumes:<br>    - .&#x2F;working:&#x2F;app<br>    ports:<br>    - “5742:80”<br>    networks:<br>    - front-tier<br>    - back-tier</p>
+<p>result:<br>    build: .&#x2F;result<br>    # use nodemon rather than node for local dev<br>    command: nodemon server.js<br>    depends_on:<br>    db:<br>        condition: service_check<br>    volumes:<br>    - .&#x2F;result:&#x2F;app<br>    ports:<br>    - “5001:80”<br>    - “5858:5858”<br>    networks:<br>    - front-tier<br>    - back-tier</p>
+<p>worker:<br>    build:<br>    context: .&#x2F;worker<br>    depends_on:<br>    redis:<br>        condition: service_check<br>    db:<br>        condition: service_check<br>    networks:<br>    - back-tier</p>
+<p>redis:<br>    image: redis:5.0-alpine3.10<br>    volumes:<br>    - “.&#x2F;statuschecks:&#x2F;statuschecks”<br>    statuscheck:<br>    test: &#x2F;statuschecks&#x2F;redis.sh<br>    interval: “5s”<br>    ports: [“6379”]<br>    networks:<br>    - back-tier</p>
+<p>db:<br>    image: postgres:9.4<br>    environment:<br>    POSTGRES_USER: “postgres”<br>    POSTGRES_PASSWORD: “postgres”<br>    volumes:<br>    - “db-data:&#x2F;var&#x2F;lib&#x2F;postgresql&#x2F;data”<br>    - “.&#x2F;statuschecks:&#x2F;statuschecks”<br>    statuscheck:<br>    test: &#x2F;statuschecks&#x2F;postgres.sh<br>    interval: “5s”<br>    networks:<br>    - back-tier</p>
+<p>volumes:<br>db-data:</p>
+<p>networks:<br>front-tier:<br>back-tier:<br>‘’’</p>
 
       
     </div>
