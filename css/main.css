@@ -263,7 +263,7 @@ hr {
 blockquote {
   border-left: 4px solid rgb(127, 7, 7);
   color: var(--blockquote-color);
-  background-color: aquamarine;
+  background-color: rgb(227, 163, 51);
   display: inline;
   margin: 0;
   padding: 0 15px;
