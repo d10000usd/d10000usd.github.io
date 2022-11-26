@@ -187,8 +187,15 @@ body {
     padding-right: 0 !important;
   }
 }
-h1,
-h2,
+h1{
+  font-size: 1.5em;
+
+}
+
+h2{
+  font-size: 1.5em;
+
+}
 h3{
 font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 
