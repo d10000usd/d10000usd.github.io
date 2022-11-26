@@ -199,10 +199,10 @@ h2{
 h3{
 font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 
-
+/*
 padding: 12px 15px;
 margin-top: 110px;
-margin-bottom: 110px;
+margin-bottom: 110px; */
 
 position: relative;
 color: #3a3a3a;
@@ -265,10 +265,16 @@ hr {
   margin: 40px 0;
 }
 blockquote {
-  border-left: 4px solid #ddd;
+  /* border-left: 4px solid #ddd;
   color: var(--blockquote-color);
   margin: 0;
-  padding: 0 15px;
+  padding: 0 15px; */
+
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 blockquote cite::before {
   content: '-';
