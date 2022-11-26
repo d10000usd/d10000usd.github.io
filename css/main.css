@@ -189,13 +189,12 @@ body {
 }
 h1 {
   position: relative;
-  color: #3a3a3a;
+  color: #b7ebc9;
   left: 0;
   height: 20%;
   margin: 0mm;
-  border-left: 5px solid rgb(32, 138, 64);
-  background-color: #5cb85c;
-  /* background: #ffffff; */
+  border-left: 5px solid rgb(113, 242, 152);
+
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
