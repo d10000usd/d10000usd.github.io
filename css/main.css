@@ -262,6 +262,8 @@ hr {
 blockquote {
   border-left: 4px solid #ddd;
   color: var(--blockquote-color);
+  display: inline;
+  background-color: aqua;
   margin: 0;
   padding: 0 15px;
 }
