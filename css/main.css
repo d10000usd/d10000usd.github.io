@@ -188,6 +188,8 @@ body {
   }
 }
 h1 {
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-weight: bold;
   position: relative;
   color: #000000;
   left: 0;
@@ -264,7 +266,7 @@ blockquote {
   border-left: 4px solid rgb(127, 7, 7);
   color: var(--blockquote-color);
   background-color: rgb(227, 163, 51);
-  display: inline;
+
   margin: 0;
   padding: 0 15px;
 }
