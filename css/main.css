@@ -265,7 +265,7 @@ hr {
 blockquote {
   border-left: 4px solid rgb(127, 7, 7);
   color: var(--blockquote-color);
-  background-color: rgb(227, 163, 51);
+  background: rgb(165, 179, 236);
 
   margin: 0;
   padding: 0 15px;
