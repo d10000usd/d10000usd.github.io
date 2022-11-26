@@ -1,0 +1,103 @@
+body {
+  background-color: White;
+  margin-left: 15px;
+}
+h1 {
+  color: maroon;
+}
+code, div.highlight {
+  background-color: MintCream;
+  padding-left: -5px;
+  margin-left: 5px;
+}
+
+div.highlight {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+}
+.p {
+  color: Black;
+}
+.n, .pl-vpf {
+  color: Black;
+  font-weight: medium;
+}
+.nf, .pl-enf {
+  color: DarkGreen;
+}
+.nx {
+  color: #005B5B;
+  font-weight: medium;
+}
+.o, .pl-ko {
+  color: black;
+}
+.mi, .pl-cn {
+  color: Brown;
+  font-weight: bold;
+}
+.k, .pl-s, .pl-k {
+  color: DarkSlateBlue;
+  font-weight: bold;
+}
+.kd {
+  color: DarkSlate;
+  font-weight: bold;
+}
+.s1 {
+  color: Chocolate;
+  font-weight: 500;
+}
+.s2 {
+  color: Red;
+}
+.c, .pl-c {
+  color: Orange;
+}
+blockquote {
+  border: 1px solid #27a9e3;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 10px solid #27a9e3;
+}
+
+
+/* 서브타이틀 네이버스타일 */
+
+h1,
+h5,
+h6 {
+    margin: 0;
+}
+
+h5 {
+    font-size: 2.6rem;
+}
+
+h6 {
+    font-size: 1.425rem;
+}
+h6.padded,
+p.padded {
+    padding: 12px 115px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+
+/* 부제 백그라운드 */
+.subtitle {
+    position: relative;
+    color: #3a3a3a;
+    left: 0;
+    height: 20%;
+    margin: 0mm;
+    border-left: 5px solid rgb(32, 138, 64);
+    background: #ffffff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    padding-right: 60px;
+}

@@ -194,7 +194,9 @@ h4,
 h5,
 h6 {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 20px 0 15px;
 
   padding: 12px 15px;
   margin-top: 110px;
