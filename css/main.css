@@ -269,7 +269,7 @@ blockquote {
   color: var(--blockquote-color);
   margin: 0;
   padding: 0 15px; */
-
+  border-left: 5px solid #000000;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
