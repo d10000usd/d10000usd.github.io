@@ -178,7 +178,7 @@ body {
   background: var(--body-bg-color);
   color: var(--text-color);
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
   line-height: 2;
 }
 @media (max-width: 991px) {
@@ -201,8 +201,27 @@ h1 {
   padding-bottom: 1px;
   padding-left: 30px;
   padding-right: 60px;
+  text-align: center;
 }
-h2,
+h2 {
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  position: relative;
+  color: #000000;
+  left: 0;
+  height: 20%;
+  margin: 0mm;
+  border-left: 5px solid rgb(17, 2, 2);
+  background-color: #f45959;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  padding-right: 30px;
+
+  text-align: center;
+  border-style: dotted;
+  border-image: repeat;
+}
 h3 {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 
@@ -230,7 +249,7 @@ h1 {
   font-size: 1.5em;
 }
 h2 {
-  font-size: 1.375em;
+  font-size: 1.0em;
 }
 h3 {
   font-size: 0.85em;
