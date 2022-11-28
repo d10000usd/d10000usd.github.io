@@ -187,6 +187,7 @@ body {
     padding-right: 0 !important;
   }
 }
+/* 큰 제목 */
 h1 {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
@@ -223,7 +224,7 @@ h2 {
   border-style: dotted;
   border-image: repeat;
 }
-/* 배경없이 글자만 써지는거 */
+/* 배경없이 글자만 써지는거 link */
 h3 {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 
@@ -272,7 +273,7 @@ h2 {
   font-size: 1.0em;
 }
 h3 {
-  font-size: 0.85em;
+  font-size: 1.25em;
 }
 h4 {
   font-size: 0.85em;
