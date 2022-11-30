@@ -1,10 +1,9 @@
 name: ci 
 on:
   push:
-    branches:
-      - main
-      - main_vue3
-      - main_next
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 permissions:
   contents: write
 jobs:
