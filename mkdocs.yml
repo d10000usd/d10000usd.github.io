@@ -1,0 +1,79 @@
+site_name: HG d10000usd@gmail.com
+theme:
+  name: 'material'
+  features:
+    - navigation.tabs
+    - navigation.sticky
+    - navigation.tracking
+    - navigation.sections
+    - navigation.prune
+  nav:
+    - Index: index.md
+    - note:
+      - note-index: indexer/index_1.md
+      - note-first: indexer/firindex_2.md
+      - note-second: indexer/index_3.md
+    - Getting started: indexer/index_4.md
+    - Release notes: indexer/index_5.md
+    - License: indexer/index_6.md
+  font:
+    code: Roboto Mono
+  plugins:
+    - tags:
+        enabled: !ENV [CI, false]
+    - git-revision-date-localized:
+        enable_creation_date: true
+    - git-committers:
+      branch: gh-pages
+    - blog:
+      post_url_format: "{slug}"
+      categories_allowed:
+        - General
+        - Search
+        - Performance
+    - social:
+      cards_color:
+        fill: "#0FF1CE"
+        text: "#FFFFFF"
+
+  icon:
+    repo: fontawesome/brands/git-alt
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  markdown_extensions:
+    - toc:
+      permalink: true
+  extra:
+    analytics:
+      feedback:
+        title: Was this page helpful?
+        ratings:
+          - icon: material/emoticon-happy-outline
+            name: This page was helpful
+            data: 1
+            note: >-
+              Thanks for your feedback!
+          - icon: material/emoticon-sad-outline
+            name: This page could be improved
+            data: 0
+            note: >-
+              Thanks for your feedback! Help us improve this page by
+              using our <a href="https://github.com/d10000usd" target="_blank" rel="noopener">feedback form</a>.
