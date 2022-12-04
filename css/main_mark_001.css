@@ -187,7 +187,6 @@ body {
     padding-right: 0 !important;
   }
 }
-/* 큰 제목 */
 h1 {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
@@ -224,7 +223,7 @@ h2 {
   border-style: dotted;
   border-image: repeat;
 }
-/* 배경없이 글자만 써지는거 link */
+/* 배경없이 글자만 써지는거 */
 h3 {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 
@@ -249,7 +248,7 @@ h4{
   height: 20%;
   margin: 0mm;
   border-left: 5px solid rgb(17, 2, 2);
-  background-color: #eff2ce;
+  background-color: #535050;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 15px;
@@ -273,7 +272,7 @@ h2 {
   font-size: 1.0em;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 0.85em;
 }
 h4 {
   font-size: 0.85em;
