@@ -1,6 +1,5 @@
 # d10000usd.github.io
 
-# d10000usd.github.io   
 
 ## mkdocs-material/   
 * site folder  push to git
