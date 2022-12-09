@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="설치하기(Installation)  테마 설치  $ cd [myBlog] # 내 블로그(Hexo Project) 폴더로 이동$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next2. Hexo 환경파일(_config.yml)의 theme 속성 변경 ExtensionsPlugins:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo_설정_방법">
+<meta property="og:url" content="http://example.com/2022/12/09/hexo_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95/index.html">
+<meta property="og:site_name" content="잘저장해">
+<meta property="og:description" content="설치하기(Installation)  테마 설치  $ cd [myBlog] # 내 블로그(Hexo Project) 폴더로 이동$ git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next2. Hexo 환경파일(_config.yml)의 theme 속성 변경 ExtensionsPlugins:">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-12-09T14:58:45.000Z">
+<meta property="article:modified_time" content="2022-12-09T14:57:47.679Z">
+<meta property="article:author" content="hg">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="theme">
+<meta property="article:tag" content="next">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2022/12/09/hexo_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>hexo_설정_방법 | 잘저장해</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">잘저장해</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>Tags<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>Categories<span class="badge">1</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives<span class="badge">25</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="calendar fa-fw"></i>Schedule</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="sitemap fa-fw"></i>Sitemap</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="heartbeat fa-fw"></i>Commonweal 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/09/hexo_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hg">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="잘저장해">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          hexo_설정_방법
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-12-09 23:58:45 / Modified: 23:57:47" itemprop="dateCreated datePublished" datetime="2022-12-09T23:58:45+09:00">2022-12-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/stock/" itemprop="url" rel="index"><span itemprop="name">stock</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2022/12/09/hexo_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/12/09/hexo_설정_방법/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>설치하기(Installation)</p>
+<ol>
+<li>테마 설치</li>
+</ol>
+<p>$ cd [myBlog] # 내 블로그(Hexo Project) 폴더로 이동<br>$ git clone <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes&#x2F;next<br>2. Hexo 환경파일(_config.yml)의 theme 속성 변경</p>
+<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></h2><h2 id="Themes-https-hexo-io-themes"><a href="#Themes-https-hexo-io-themes" class="headerlink" title="Themes: https://hexo.io/themes/"></a>Themes: <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></h2><p>theme: next<br>3. Hexo 서버 재시작</p>
+<p>hexo clean<br>hexo s # hexo server<br>테마 환경 설정<br>테마 환경파일 위치 : themes&#x2F;next&#x2F;_config.yml</p>
+<p>아카이브(Archive) 내에 응원메세지(cheers) 비활성화 하기.<br>(한국어로 “음..! 총 n개의 포스트 포스트를 마저 작성하세요”라는 메세지가 출력되는데 마치 내 포스트가 전부 미완성인 것만 같다.)</p>
+<h1 id="Enable-“cheers”-for-archive-page"><a href="#Enable-“cheers”-for-archive-page" class="headerlink" title="Enable “cheers” for archive page."></a>Enable “cheers” for archive page.</h1><p>cheers: false<br>themes&#x2F;next&#x2F;languages&#x2F;ko.yml파일에 있는 해당 문구를 변경해도 된다.</p>
+<p>공통 아이콘<br>환경 파일 내부에서 사용되는 아이콘의 이름은 모두 font-awesome(4.7버전)을 사용한다. 각 아이콘의 이름은 다음 링크를 참고한다.<br>font-awesome (<a target="_blank" rel="noopener" href="https://fontawesome.com/v4.7.0/icons/">https://fontawesome.com/v4.7.0/icons/</a>)</p>
+<p>메뉴항목(페이지) 추가하기<br>공통 : 설정파일에 원하는 메뉴항목을 추가해준다. 각 항목은 Key: value 쌍으로 이루어져있으며, ‘Key’는 해당 메뉴의 이름, ‘value’는 URL params값과 보여지는 아이콘 이름을 설정할 수 있다. 두 개의 값은 ||로 구분한다.</p>
+<h1 id="themes-x2F-next-x2F-config-yml"><a href="#themes-x2F-next-x2F-config-yml" class="headerlink" title="themes&#x2F;next&#x2F;_config.yml"></a>themes&#x2F;next&#x2F;_config.yml</h1><p>menu:<br>  home: &#x2F; || home<br>  about: &#x2F;about&#x2F; || user<br>  tags: &#x2F;tags&#x2F; || tags<br>  categories: &#x2F;categories&#x2F; || th<br>  archives: &#x2F;archives&#x2F; || archive<br>  schedule: &#x2F;schedule&#x2F; || calendar<br>  sitemap: &#x2F;sitemap.xml || sitemap<br>  commonweal: &#x2F;404&#x2F; || heartbeat</p>
+<p>카테고리</p>
+<ol>
+<li>환경파일(themes&#x2F;next&#x2F;_config.yml)의 categories 항목을 추가해주고, 다음을 입력하여 페이지를 추가해준다.</li>
+</ol>
+<p>$ hexo new page categories<br>2) 추가된 파일(&#x2F;source&#x2F;categories&#x2F;index.md)을 다음과 같이 수정해준다.</p>
+<hr>
+<h2 id="title-카테고리-categories-date-2019-05-16-10-10-40type-“categories”comments-false"><a href="#title-카테고리-categories-date-2019-05-16-10-10-40type-“categories”comments-false" class="headerlink" title="title: 카테고리(categories)date: 2019-05-16 10:10:40type: “categories”comments: false"></a>title: 카테고리(categories)<br>date: 2019-05-16 10:10:40<br>type: “categories”<br>comments: false</h2><ol start="3">
+<li>포스트 작성 시 상단 헤드 내용에 categories 항목을 추가 작성해준다.</li>
+</ol>
+<hr>
+<h2 id="title-Hexo-테마-Nextcategories-Blog…"><a href="#title-Hexo-테마-Nextcategories-Blog…" class="headerlink" title="title: Hexo 테마 - Nextcategories: Blog…"></a>title: Hexo 테마 - Next<br>categories: Blog<br>…</h2><p>(TIP: &#x2F;scaffolds&#x2F;폴더 내부 파일에 항목을 추가해주면 hexo new명령어로 포스트 작성 시 항목이 자동으로 붙는다.)</p>
+<p>tags</p>
+<ol>
+<li>환경파일(themes&#x2F;next&#x2F;_config.yml)의 tags 항목을 추가해주고, 다음을 입력하여 페이지를 추가해준다.</li>
+</ol>
+<p>$ hexo new page tags<br>2) 추가된 파일(&#x2F;source&#x2F;tags&#x2F;index.md)을 다음과 같이 수정해준다.</p>
+<hr>
+<h2 id="title-태그-tags-date-2019-05-16-10-10-40type-“tags”comments-false"><a href="#title-태그-tags-date-2019-05-16-10-10-40type-“tags”comments-false" class="headerlink" title="title: 태그(tags)date: 2019-05-16 10:10:40type: “tags”comments: false"></a>title: 태그(tags)<br>date: 2019-05-16 10:10:40<br>type: “tags”<br>comments: false</h2><ol start="3">
+<li>포스트 작성 시 상단 헤드 내용에 tags 항목을 추가 작성해준다. 태그들은 하이픈(-)의 리스트 형태로 구분한다.</li>
+</ol>
+<hr>
+<h2 id="title-Hexo-테마-Nexttags-blog-hexo-theme-next…"><a href="#title-Hexo-테마-Nexttags-blog-hexo-theme-next…" class="headerlink" title="title: Hexo 테마 - Nexttags:- blog- hexo- theme- next…"></a>title: Hexo 테마 - Next<br>tags:<br>- blog<br>- hexo<br>- theme<br>- next<br>…</h2><p>(TIP: &#x2F;scaffolds&#x2F;폴더 내부 파일에 항목을 추가해주면 hexo new명령어로 포스트 작성 시 항목이 자동으로 붙는다.)</p>
+<p>Widgets<br>댓글 기능 추가하기<br>참고 링크<br>Hexo Next Github<br>chentging Blog</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/blog/" rel="tag"># blog</a>
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/theme/" rel="tag"># theme</a>
+              <a href="/tags/next/" rel="tag"># next</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/12/09/%EC%95%B5%EA%B8%80%EB%A1%9C%EC%83%89%EC%8A%A8_7%EC%99%95%EA%B5%AD_%EA%B2%8C%EB%A5%B4%EB%A7%8C/" rel="prev" title="앵글로색슨 7왕국 게르만">
+      <i class="fa fa-chevron-left"></i> 앵글로색슨 7왕국 게르만
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Extensions"><span class="nav-number">1.</span> <span class="nav-text">Extensions</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Plugins-https-hexo-io-plugins"><span class="nav-number">1.1.</span> <span class="nav-text">Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Themes-https-hexo-io-themes"><span class="nav-number">1.2.</span> <span class="nav-text">Themes: https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Enable-%E2%80%9Ccheers%E2%80%9D-for-archive-page"><span class="nav-number">2.</span> <span class="nav-text">Enable “cheers” for archive page.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#themes-x2F-next-x2F-config-yml"><span class="nav-number">3.</span> <span class="nav-text">themes&#x2F;next&#x2F;_config.yml</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-categories-date-2019-05-16-10-10-40type-%E2%80%9Ccategories%E2%80%9Dcomments-false"><span class="nav-number">3.1.</span> <span class="nav-text">title: 카테고리(categories)date: 2019-05-16 10:10:40type: “categories”comments: false</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#title-Hexo-%ED%85%8C%EB%A7%88-Nextcategories-Blog%E2%80%A6"><span class="nav-number">3.2.</span> <span class="nav-text">title: Hexo 테마 - Nextcategories: Blog…</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#title-%ED%83%9C%EA%B7%B8-tags-date-2019-05-16-10-10-40type-%E2%80%9Ctags%E2%80%9Dcomments-false"><span class="nav-number">3.3.</span> <span class="nav-text">title: 태그(tags)date: 2019-05-16 10:10:40type: “tags”comments: false</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#title-Hexo-%ED%85%8C%EB%A7%88-Nexttags-blog-hexo-theme-next%E2%80%A6"><span class="nav-number">3.4.</span> <span class="nav-text">title: Hexo 테마 - Nexttags:- blog- hexo- theme- next…</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">hg</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hg</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://hss-3.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://example.com/2022/12/09/hexo_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95/";
+    this.page.identifier = "2022/12/09/hexo_설정_방법/";
+    this.page.title = "hexo_설정_방법";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://hss-3.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

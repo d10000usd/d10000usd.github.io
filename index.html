@@ -110,12 +110,42 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/" rel="section"><i class="home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>Tags<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>Categories<span class="badge">1</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives<span class="badge">25</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="calendar fa-fw"></i>Schedule</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="sitemap fa-fw"></i>Sitemap</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="heartbeat fa-fw"></i>Commonweal 404</a>
 
   </li>
   </ul>
@@ -141,6 +171,122 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/09/hexo_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hg">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="잘저장해">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/09/hexo_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95/" class="post-title-link" itemprop="url">hexo_설정_방법</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-12-09 23:58:45 / Modified: 23:57:47" itemprop="dateCreated datePublished" datetime="2022-12-09T23:58:45+09:00">2022-12-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/stock/" itemprop="url" rel="index"><span itemprop="name">stock</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2022/12/09/hexo_%EC%84%A4%EC%A0%95_%EB%B0%A9%EB%B2%95/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/12/09/hexo_설정_방법/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>설치하기(Installation)</p>
+<ol>
+<li>테마 설치</li>
+</ol>
+<p>$ cd [myBlog] # 내 블로그(Hexo Project) 폴더로 이동<br>$ git clone <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes&#x2F;next<br>2. Hexo 환경파일(_config.yml)의 theme 속성 변경</p>
+<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></h2><h2 id="Themes-https-hexo-io-themes"><a href="#Themes-https-hexo-io-themes" class="headerlink" title="Themes: https://hexo.io/themes/"></a>Themes: <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></h2><p>theme: next<br>3. Hexo 서버 재시작</p>
+<p>hexo clean<br>hexo s # hexo server<br>테마 환경 설정<br>테마 환경파일 위치 : themes&#x2F;next&#x2F;_config.yml</p>
+<p>아카이브(Archive) 내에 응원메세지(cheers) 비활성화 하기.<br>(한국어로 “음..! 총 n개의 포스트 포스트를 마저 작성하세요”라는 메세지가 출력되는데 마치 내 포스트가 전부 미완성인 것만 같다.)</p>
+<h1 id="Enable-“cheers”-for-archive-page"><a href="#Enable-“cheers”-for-archive-page" class="headerlink" title="Enable “cheers” for archive page."></a>Enable “cheers” for archive page.</h1><p>cheers: false<br>themes&#x2F;next&#x2F;languages&#x2F;ko.yml파일에 있는 해당 문구를 변경해도 된다.</p>
+<p>공통 아이콘<br>환경 파일 내부에서 사용되는 아이콘의 이름은 모두 font-awesome(4.7버전)을 사용한다. 각 아이콘의 이름은 다음 링크를 참고한다.<br>font-awesome (<a target="_blank" rel="noopener" href="https://fontawesome.com/v4.7.0/icons/">https://fontawesome.com/v4.7.0/icons/</a>)</p>
+<p>메뉴항목(페이지) 추가하기<br>공통 : 설정파일에 원하는 메뉴항목을 추가해준다. 각 항목은 Key: value 쌍으로 이루어져있으며, ‘Key’는 해당 메뉴의 이름, ‘value’는 URL params값과 보여지는 아이콘 이름을 설정할 수 있다. 두 개의 값은 ||로 구분한다.</p>
+<h1 id="themes-x2F-next-x2F-config-yml"><a href="#themes-x2F-next-x2F-config-yml" class="headerlink" title="themes&#x2F;next&#x2F;_config.yml"></a>themes&#x2F;next&#x2F;_config.yml</h1><p>menu:<br>  home: &#x2F; || home<br>  about: &#x2F;about&#x2F; || user<br>  tags: &#x2F;tags&#x2F; || tags<br>  categories: &#x2F;categories&#x2F; || th<br>  archives: &#x2F;archives&#x2F; || archive<br>  schedule: &#x2F;schedule&#x2F; || calendar<br>  sitemap: &#x2F;sitemap.xml || sitemap<br>  commonweal: &#x2F;404&#x2F; || heartbeat</p>
+<p>카테고리</p>
+<ol>
+<li>환경파일(themes&#x2F;next&#x2F;_config.yml)의 categories 항목을 추가해주고, 다음을 입력하여 페이지를 추가해준다.</li>
+</ol>
+<p>$ hexo new page categories<br>2) 추가된 파일(&#x2F;source&#x2F;categories&#x2F;index.md)을 다음과 같이 수정해준다.</p>
+<hr>
+<h2 id="title-카테고리-categories-date-2019-05-16-10-10-40type-“categories”comments-false"><a href="#title-카테고리-categories-date-2019-05-16-10-10-40type-“categories”comments-false" class="headerlink" title="title: 카테고리(categories)date: 2019-05-16 10:10:40type: “categories”comments: false"></a>title: 카테고리(categories)<br>date: 2019-05-16 10:10:40<br>type: “categories”<br>comments: false</h2><ol start="3">
+<li>포스트 작성 시 상단 헤드 내용에 categories 항목을 추가 작성해준다.</li>
+</ol>
+<hr>
+<h2 id="title-Hexo-테마-Nextcategories-Blog…"><a href="#title-Hexo-테마-Nextcategories-Blog…" class="headerlink" title="title: Hexo 테마 - Nextcategories: Blog…"></a>title: Hexo 테마 - Next<br>categories: Blog<br>…</h2><p>(TIP: &#x2F;scaffolds&#x2F;폴더 내부 파일에 항목을 추가해주면 hexo new명령어로 포스트 작성 시 항목이 자동으로 붙는다.)</p>
+<p>tags</p>
+<ol>
+<li>환경파일(themes&#x2F;next&#x2F;_config.yml)의 tags 항목을 추가해주고, 다음을 입력하여 페이지를 추가해준다.</li>
+</ol>
+<p>$ hexo new page tags<br>2) 추가된 파일(&#x2F;source&#x2F;tags&#x2F;index.md)을 다음과 같이 수정해준다.</p>
+<hr>
+<h2 id="title-태그-tags-date-2019-05-16-10-10-40type-“tags”comments-false"><a href="#title-태그-tags-date-2019-05-16-10-10-40type-“tags”comments-false" class="headerlink" title="title: 태그(tags)date: 2019-05-16 10:10:40type: “tags”comments: false"></a>title: 태그(tags)<br>date: 2019-05-16 10:10:40<br>type: “tags”<br>comments: false</h2><ol start="3">
+<li>포스트 작성 시 상단 헤드 내용에 tags 항목을 추가 작성해준다. 태그들은 하이픈(-)의 리스트 형태로 구분한다.</li>
+</ol>
+<hr>
+<h2 id="title-Hexo-테마-Nexttags-blog-hexo-theme-next…"><a href="#title-Hexo-테마-Nexttags-blog-hexo-theme-next…" class="headerlink" title="title: Hexo 테마 - Nexttags:- blog- hexo- theme- next…"></a>title: Hexo 테마 - Next<br>tags:<br>- blog<br>- hexo<br>- theme<br>- next<br>…</h2><p>(TIP: &#x2F;scaffolds&#x2F;폴더 내부 파일에 항목을 추가해주면 hexo new명령어로 포스트 작성 시 항목이 자동으로 붙는다.)</p>
+<p>Widgets<br>댓글 기능 추가하기<br>참고 링크<br>Hexo Next Github<br>chentging Blog</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -985,95 +1131,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/08/%ED%81%90%EC%97%90%EC%8A%A4%EC%95%84%EC%9D%B4_%EB%84%A4%EC%98%A8_%EC%A7%80%EB%B6%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="hg">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="잘저장해">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/12/08/%ED%81%90%EC%97%90%EC%8A%A4%EC%95%84%EC%9D%B4_%EB%84%A4%EC%98%A8_%EC%A7%80%EB%B6%84/" class="post-title-link" itemprop="url">큐에스아이 네온 지분</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-12-08 12:43:43" itemprop="dateCreated datePublished" datetime="2022-12-08T12:43:43+09:00">2022-12-08</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/stock/" itemprop="url" rel="index"><span itemprop="name">stock</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2022/12/08/%ED%81%90%EC%97%90%EC%8A%A4%EC%95%84%EC%9D%B4_%EB%84%A4%EC%98%A8_%EC%A7%80%EB%B6%84/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/12/08/큐에스아이_네온_지분/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="T-큐에스아이-네온-지분"><a href="#T-큐에스아이-네온-지분" class="headerlink" title="T: 큐에스아이 네온 지분"></a>T: 큐에스아이 네온 지분</h1><h2 id="npl"><a href="#npl" class="headerlink" title="npl:"></a>npl:</h2><p><span style="color: #000000; font-weight: 700; font-size: 19px;">파이낸셜뉴스 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #2dc62a; font-weight: 600; font-size: 17px;">SK</span>하이닉스</span>가 반도체 원료 국산화에 나서면서 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">큐에스아이</span></span>의 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">지분</span> 관계가 국내 주식시장에서 부각되고 있다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;">5일 금융감독원 전자공시시스템에 따르면 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">큐에스아이</span></span>는 자유반도체성장투자조합의 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">지분</span> 18.3%를 보유하고 있다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;">지유반도체투자조합에서 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">지분</span> 13.37%를 보유한 티이엠씨(TEMC)는 반도체 소재 부품장비 중 특수가스 전문업체다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;">최근 우크라이나가 전 세계 생산능력 중 70%를 점하고 있는 반도체 제조용 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>가스 수급 차질에 공급 문제가 생기면서 가격기 치솟아 관심을 모은다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;"><span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #2dc62a; font-weight: 600; font-size: 17px;">SK</span>하이닉스</span>는 반도체 공정에 활용하는 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>가스 국산 사용 비중을 40%까지 확대했다고 이날 밝혔다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>은 반도체 노광공정에 사용하는 엑시머 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;">레이</span>저 가스 주 재료다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>은 공기 중에 0.00182%만 존재하는 희귀자원이다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>을 채취하려면 대규모 공기분리장치(ASU) 플랜트가 필요하다. </span><br></p>
-<h2 id="Related-레이-SK-SK하이닉스-큐에스아이"><a href="#Related-레이-SK-SK하이닉스-큐에스아이" class="headerlink" title="Related: #레이 #SK #SK하이닉스 #큐에스아이"></a>Related: #레이 #SK #SK하이닉스 #큐에스아이</h2><h4 id="Setting-value"><a href="#Setting-value" class="headerlink" title="Setting value:"></a>Setting value:</h4><p>요약강도: 0.3<br>요약강도2: 1<br>요약강도3: 0.8</p>
-<h3 id="links"><a href="#links" class="headerlink" title="links:"></a>links:</h3><p><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202210051338114851">http://www.fnnews.com/news/202210051338114851</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202210051338114851">http://www.fnnews.com/news/202210051338114851</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202209061032234785">http://www.fnnews.com/news/202209061032234785</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202209061032234785">http://www.fnnews.com/news/202209061032234785</a></p>
-<h1 id="T-큐에스아이-네온-지분-1"><a href="#T-큐에스아이-네온-지분-1" class="headerlink" title="T: 큐에스아이 네온 지분"></a>T: 큐에스아이 네온 지분</h1><h2 id="npl-1"><a href="#npl-1" class="headerlink" title="npl:"></a>npl:</h2><p><span style="color: #000000; font-weight: 700; font-size: 19px;">파이낸셜뉴스 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #2dc62a; font-weight: 600; font-size: 17px;">SK</span>하이닉스</span>가 반도체 원료 국산화에 나서면서 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">큐에스아이</span></span>의 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">지분</span> 관계가 국내 주식시장에서 부각되고 있다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;">최근 우크라이나가 전 세계 생산능력 중 70%를 점하고 있는 반도체 제조용 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>가스 수급 차질에 공급 문제가 생기면서 가격기 치솟아 관심을 모은다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>은 공기 중에 0.00182%만 존재하는 희귀자원이다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>을 채취하려면 대규모 공기분리장치(ASU) 플랜트가 필요하다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;">2024년까지 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span> 전량을 국산으로 전환할 방침이다. </span><br></p>
-<h2 id="Related-레이-SK-SK하이닉스-큐에스아이-1"><a href="#Related-레이-SK-SK하이닉스-큐에스아이-1" class="headerlink" title="Related: #레이 #SK #SK하이닉스 #큐에스아이"></a>Related: #레이 #SK #SK하이닉스 #큐에스아이</h2><h4 id="Setting-value-1"><a href="#Setting-value-1" class="headerlink" title="Setting value:"></a>Setting value:</h4><p>요약강도: 0.2<br>요약강도2: 2<br>요약강도3: 0.8</p>
-<h3 id="links-1"><a href="#links-1" class="headerlink" title="links:"></a>links:</h3><p><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202210051338114851">http://www.fnnews.com/news/202210051338114851</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202210051338114851">http://www.fnnews.com/news/202210051338114851</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202209061032234785">http://www.fnnews.com/news/202209061032234785</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202209061032234785">http://www.fnnews.com/news/202209061032234785</a></p>
-<h1 id="T-큐에스아이-네온-지분-2"><a href="#T-큐에스아이-네온-지분-2" class="headerlink" title="T: 큐에스아이 네온 지분"></a>T: 큐에스아이 네온 지분</h1><h2 id="npl-2"><a href="#npl-2" class="headerlink" title="npl:"></a>npl:</h2><p><span style="color: #000000; font-weight: 700; font-size: 19px;">파이낸셜뉴스 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #2dc62a; font-weight: 600; font-size: 17px;">SK</span>하이닉스</span>가 반도체 원료 국산화에 나서면서 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">큐에스아이</span></span>의 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">지분</span> 관계가 국내 주식시장에서 부각되고 있다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;">5일 금융감독원 전자공시시스템에 따르면 <span style="color: #2dc62a; font-weight: 600; font-size: 17px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">큐에스아이</span></span>는 자유반도체성장투자조합의 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">지분</span> 18.3%를 보유하고 있다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;">티이엠씨는 지난 1월 포스코(POSCO)와 함께 제철소 산소공장 부산물로부터 <span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>을 포집하는 기술을 개발해 양산화에 성공했다. </span><br><br><span style="color: #000000; font-weight: 700; font-size: 19px;"><span style="color: #ec1073; font-weight: 600; font-size: 17px;">네온</span>은 반도체 및 디스플<span style="color: #2dc62a; font-weight: 600; font-size: 17px;">레이</span> 시장의 지속적인 성장에 따라 공정에 사용되는 희귀가스로 최근 수요가 급증하고 있다. </span><br></p>
-<h2 id="Related-레이-SK-SK하이닉스-큐에스아이-2"><a href="#Related-레이-SK-SK하이닉스-큐에스아이-2" class="headerlink" title="Related: #레이 #SK #SK하이닉스 #큐에스아이"></a>Related: #레이 #SK #SK하이닉스 #큐에스아이</h2><h4 id="Setting-value-2"><a href="#Setting-value-2" class="headerlink" title="Setting value:"></a>Setting value:</h4><p>요약강도: 0.2<br>요약강도2: 3<br>요약강도3: 0.8</p>
-<h3 id="links-2"><a href="#links-2" class="headerlink" title="links:"></a>links:</h3><p><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202210051338114851">http://www.fnnews.com/news/202210051338114851</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202210051338114851">http://www.fnnews.com/news/202210051338114851</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202209061032234785">http://www.fnnews.com/news/202209061032234785</a><br><a target="_blank" rel="noopener" href="http://www.fnnews.com/news/202209061032234785">http://www.fnnews.com/news/202209061032234785</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1143,17 +1200,21 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">categories</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
