@@ -1,0 +1,22 @@
+|                        | 0                         |
+|:-----------------------|:--------------------------|
+| Start                  | 2022-06-24 09:00:00       |
+| End                    | 2023-07-28 09:00:00       |
+| Duration               | 399 days 00:00:00         |
+| Exposure Time [%]      | 89.75                     |
+| Equity Final [$]       | 6561.707999999999         |
+| Equity Peak [$]        | 13348.591999999999        |
+| Return [%]             | -34.38292000000001        |
+| Buy & Hold Return [%]  | -61.048951048951054       |
+| Return (Ann.) [%]      | -31.918687236054332       |
+| Volatility (Ann.) [%]  | 53.9072755424258          |
+| Sharpe Ratio           | 0.0                       |
+| Sortino Ratio          | 0.0                       |
+| Calmar Ratio           | 0.0                       |
+| Max. Drawdown [%]      | -53.814155080925396       |
+| Avg. Drawdown [%]      | -16.989995216794046       |
+| Max. Drawdown Duration | 171 days 00:00:00         |
+| Avg. Drawdown Duration | 45 days 00:00:00          |
+| # Trades               | 24                        |
+| ticker                 | RANK-6-KRW-SAND           |
+| explain                | # Explain RANK-6-KRW-SAND |

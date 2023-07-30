@@ -1,0 +1,22 @@
+|                        | 0                        |
+|:-----------------------|:-------------------------|
+| Start                  | 2022-06-25 09:00:00      |
+| End                    | 2023-07-29 09:00:00      |
+| Duration               | 399 days 00:00:00        |
+| Exposure Time [%]      | 81.5                     |
+| Equity Final [$]       | 12514.478000000006       |
+| Equity Peak [$]        | 16893.312                |
+| Return [%]             | 25.14478000000007        |
+| Buy & Hold Return [%]  | -25.925925925925924      |
+| Return (Ann.) [%]      | 22.712590555406955       |
+| Volatility (Ann.) [%]  | 115.92471686992332       |
+| Sharpe Ratio           | 0.19592534852504556      |
+| Sortino Ratio          | 0.4399213487979561       |
+| Calmar Ratio           | 0.5431408451069633       |
+| Max. Drawdown [%]      | -41.81712857727364       |
+| Avg. Drawdown [%]      | -12.738004443819786      |
+| Max. Drawdown Duration | 172 days 00:00:00        |
+| Avg. Drawdown Duration | 26 days 00:00:00         |
+| # Trades               | 21                       |
+| ticker                 | RANK-8-KRW-CHZ           |
+| explain                | # Explain RANK-8-KRW-CHZ |

@@ -1,0 +1,22 @@
+|                        | 0                         |
+|:-----------------------|:--------------------------|
+| Start                  | 2023-07-21 11:15:00       |
+| End                    | 2023-07-29 19:00:00       |
+| Duration               | 8 days 07:45:00           |
+| Exposure Time [%]      | 93.75                     |
+| Equity Final [$]       | 9310.553260000006         |
+| Equity Peak [$]        | 16844.70036               |
+| Return [%]             | -6.89446739999994         |
+| Buy & Hold Return [%]  | 57.980456026058626        |
+| Return (Ann.) [%]      | -98.6137557873325         |
+| Volatility (Ann.) [%]  | 3.5944498823865385        |
+| Sharpe Ratio           | 0.0                       |
+| Sortino Ratio          | 0.0                       |
+| Calmar Ratio           | 0.0                       |
+| Max. Drawdown [%]      | -53.334113448130225       |
+| Avg. Drawdown [%]      | -13.960479231733125       |
+| Max. Drawdown Duration | 6 days 04:45:00           |
+| Avg. Drawdown Duration | 1 days 02:26:00           |
+| # Trades               | 39                        |
+| ticker                 | RANK-4-KRW-STMX           |
+| explain                | # Explain RANK-4-KRW-STMX |

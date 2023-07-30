@@ -1,0 +1,22 @@
+|                        | 0                          |
+|:-----------------------|:---------------------------|
+| Start                  | 2023-05-23 21:00:00        |
+| End                    | 2023-07-29 09:00:00        |
+| Duration               | 66 days 12:00:00           |
+| Exposure Time [%]      | 93.5                       |
+| Equity Final [$]       | 10089.748000000001         |
+| Equity Peak [$]        | 12805.416000000001         |
+| Return [%]             | 0.897480000000014          |
+| Buy & Hold Return [%]  | -9.871244635193133         |
+| Return (Ann.) [%]      | 4.912729354001888          |
+| Volatility (Ann.) [%]  | 62.094106536114325         |
+| Sharpe Ratio           | 0.07911748196496898        |
+| Sortino Ratio          | 0.13875423060522235        |
+| Calmar Ratio           | 0.2316540279349517         |
+| Max. Drawdown [%]      | -21.207182960709748        |
+| Avg. Drawdown [%]      | -4.126075092466818         |
+| Max. Drawdown Duration | 33 days 20:00:00           |
+| Avg. Drawdown Duration | 4 days 16:00:00            |
+| # Trades               | 17                         |
+| ticker                 | RANK-2-KRW-THETA           |
+| explain                | # Explain RANK-2-KRW-THETA |

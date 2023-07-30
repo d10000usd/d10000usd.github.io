@@ -1,0 +1,22 @@
+|                        | 0                        |
+|:-----------------------|:-------------------------|
+| Start                  | 2022-06-25 09:00:00      |
+| End                    | 2023-07-29 09:00:00      |
+| Duration               | 399 days 00:00:00        |
+| Exposure Time [%]      | 94.75                    |
+| Equity Final [$]       | 16185.456019999998       |
+| Equity Peak [$]        | 22560.9849               |
+| Return [%]             | 61.85456019999997        |
+| Buy & Hold Return [%]  | -3.0456852791878126      |
+| Return (Ann.) [%]      | 55.17669852677582        |
+| Volatility (Ann.) [%]  | 177.8716772814936        |
+| Sharpe Ratio           | 0.3102050836314715       |
+| Sortino Ratio          | 1.2549040516347145       |
+| Calmar Ratio           | 1.1606666558023448       |
+| Max. Drawdown [%]      | -47.5387987161855        |
+| Avg. Drawdown [%]      | -15.768940338985185      |
+| Max. Drawdown Duration | 176 days 00:00:00        |
+| Avg. Drawdown Duration | 54 days 00:00:00         |
+| # Trades               | 20                       |
+| ticker                 | RANK-2-KRW-CRE           |
+| explain                | # Explain RANK-2-KRW-CRE |

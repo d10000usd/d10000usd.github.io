@@ -1,0 +1,22 @@
+|                        | 0                        |
+|:-----------------------|:-------------------------|
+| Start                  | 2022-06-25 09:00:00      |
+| End                    | 2023-07-29 09:00:00      |
+| Duration               | 399 days 00:00:00        |
+| Exposure Time [%]      | 85.5                     |
+| Equity Final [$]       | 12182.467999999997       |
+| Equity Peak [$]        | 13758.021800000006       |
+| Return [%]             | 21.824679999999972       |
+| Buy & Hold Return [%]  | 28.418549346016658       |
+| Return (Ann.) [%]      | 19.738397722905244       |
+| Volatility (Ann.) [%]  | 44.2509414280685         |
+| Sharpe Ratio           | 0.44605599532816087      |
+| Sortino Ratio          | 0.8371692487779778       |
+| Calmar Ratio           | 0.9349147607678389       |
+| Max. Drawdown [%]      | -21.112510520952988      |
+| Avg. Drawdown [%]      | -6.2216984408217195      |
+| Max. Drawdown Duration | 141 days 00:00:00        |
+| Avg. Drawdown Duration | 26 days 00:00:00         |
+| # Trades               | 18                       |
+| ticker                 | RANK-4-KRW-TRX           |
+| explain                | # Explain RANK-4-KRW-TRX |

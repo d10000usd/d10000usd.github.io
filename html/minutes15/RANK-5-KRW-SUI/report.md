@@ -1,0 +1,22 @@
+|                        | 0                        |
+|:-----------------------|:-------------------------|
+| Start                  | 2023-07-21 11:30:00      |
+| End                    | 2023-07-29 19:15:00      |
+| Duration               | 8 days 07:45:00          |
+| Exposure Time [%]      | 94.375                   |
+| Equity Final [$]       | 8573.427999999993        |
+| Equity Peak [$]        | 10068.508                |
+| Return [%]             | -14.265720000000073      |
+| Buy & Hold Return [%]  | -8.408071748878925       |
+| Return (Ann.) [%]      | -99.77979276492658       |
+| Volatility (Ann.) [%]  | 0.11262645061980255      |
+| Sharpe Ratio           | 0.0                      |
+| Sortino Ratio          | 0.0                      |
+| Calmar Ratio           | 0.0                      |
+| Max. Drawdown [%]      | -14.948391559106945      |
+| Avg. Drawdown [%]      | -4.11567542610958        |
+| Max. Drawdown Duration | 7 days 16:15:00          |
+| Avg. Drawdown Duration | 1 days 23:12:00          |
+| # Trades               | 43                       |
+| ticker                 | RANK-5-KRW-SUI           |
+| explain                | # Explain RANK-5-KRW-SUI |

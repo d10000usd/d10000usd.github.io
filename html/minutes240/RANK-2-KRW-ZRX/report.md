@@ -1,0 +1,22 @@
+|                        | 0                        |
+|:-----------------------|:-------------------------|
+| Start                  | 2023-05-23 21:00:00      |
+| End                    | 2023-07-29 09:00:00      |
+| Duration               | 66 days 12:00:00         |
+| Exposure Time [%]      | 93.5                     |
+| Equity Final [$]       | 9552.954000000012        |
+| Equity Peak [$]        | 14082.018000000004       |
+| Return [%]             | -4.470459999999876       |
+| Buy & Hold Return [%]  | -6.95364238410596        |
+| Return (Ann.) [%]      | -21.76769768052884       |
+| Volatility (Ann.) [%]  | 48.73757849597079        |
+| Sharpe Ratio           | 0.0                      |
+| Sortino Ratio          | 0.0                      |
+| Calmar Ratio           | 0.0                      |
+| Max. Drawdown [%]      | -38.6384678673184        |
+| Avg. Drawdown [%]      | -3.8775579958963133      |
+| Max. Drawdown Duration | 31 days 04:00:00         |
+| Avg. Drawdown Duration | 3 days 03:00:00          |
+| # Trades               | 20                       |
+| ticker                 | RANK-2-KRW-ZRX           |
+| explain                | # Explain RANK-2-KRW-ZRX |

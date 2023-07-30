@@ -1,0 +1,22 @@
+|                        | 0                         |
+|:-----------------------|:--------------------------|
+| Start                  | 2023-05-23 21:00:00       |
+| End                    | 2023-07-29 09:00:00       |
+| Duration               | 66 days 12:00:00          |
+| Exposure Time [%]      | 94.5                      |
+| Equity Final [$]       | 13516.373999999993        |
+| Equity Peak [$]        | 16366.353999999996        |
+| Return [%]             | 35.163739999999926        |
+| Buy & Hold Return [%]  | -9.169054441260744        |
+| Return (Ann.) [%]      | 403.9777566613161         |
+| Volatility (Ann.) [%]  | 544.3456619860699         |
+| Sharpe Ratio           | 0.7421346120172703        |
+| Sortino Ratio          | 8.683615801001576         |
+| Calmar Ratio           | 18.134957961613242        |
+| Max. Drawdown [%]      | -22.276189308871118       |
+| Avg. Drawdown [%]      | -7.788381374817662        |
+| Max. Drawdown Duration | 25 days 08:00:00          |
+| Avg. Drawdown Duration | 6 days 16:00:00           |
+| # Trades               | 19                        |
+| ticker                 | RANK-6-KRW-CELO           |
+| explain                | # Explain RANK-6-KRW-CELO |

@@ -1,0 +1,22 @@
+|                        | 0                        |
+|:-----------------------|:-------------------------|
+| Start                  | 2023-07-21 10:15:00      |
+| End                    | 2023-07-29 19:00:00      |
+| Duration               | 8 days 08:45:00          |
+| Exposure Time [%]      | 93.875                   |
+| Equity Final [$]       | 8376.430000000004        |
+| Equity Peak [$]        | 10000.0                  |
+| Return [%]             | -16.235699999999962      |
+| Buy & Hold Return [%]  | -8.157099697885197       |
+| Return (Ann.) [%]      | -99.89516255184171       |
+| Volatility (Ann.) [%]  | 0.05771743880539959      |
+| Sharpe Ratio           | 0.0                      |
+| Sortino Ratio          | 0.0                      |
+| Calmar Ratio           | 0.0                      |
+| Max. Drawdown [%]      | -19.02719999999998       |
+| Avg. Drawdown [%]      | -19.02719999999998       |
+| Max. Drawdown Duration | 7 days 20:45:00          |
+| Avg. Drawdown Duration | 7 days 20:45:00          |
+| # Trades               | 29                       |
+| ticker                 | RANK-7-KRW-ARB           |
+| explain                | # Explain RANK-7-KRW-ARB |

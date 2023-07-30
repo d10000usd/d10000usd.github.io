@@ -1,0 +1,22 @@
+|                        | 0                         |
+|:-----------------------|:--------------------------|
+| Start                  | 2022-06-25 09:00:00       |
+| End                    | 2023-07-29 09:00:00       |
+| Duration               | 399 days 00:00:00         |
+| Exposure Time [%]      | 93.25                     |
+| Equity Final [$]       | 13837.052                 |
+| Equity Peak [$]        | 16873.118000000002        |
+| Return [%]             | 38.37052                  |
+| Buy & Hold Return [%]  | -62.113207547169814       |
+| Return (Ann.) [%]      | 34.49379877282897         |
+| Volatility (Ann.) [%]  | 111.9063717540631         |
+| Sharpe Ratio           | 0.30823802284141666       |
+| Sortino Ratio          | 0.7333605272026202        |
+| Calmar Ratio           | 0.6789963111723631        |
+| Max. Drawdown [%]      | -50.80115783437993        |
+| Avg. Drawdown [%]      | -11.67132534957994        |
+| Max. Drawdown Duration | 154 days 00:00:00         |
+| Avg. Drawdown Duration | 27 days 00:00:00          |
+| # Trades               | 24                        |
+| ticker                 | RANK-7-KRW-MANA           |
+| explain                | # Explain RANK-7-KRW-MANA |

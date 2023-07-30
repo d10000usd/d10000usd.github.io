@@ -1,0 +1,22 @@
+|                        | 0                         |
+|:-----------------------|:--------------------------|
+| Start                  | 2022-06-25 09:00:00       |
+| End                    | 2023-07-29 09:00:00       |
+| Duration               | 399 days 00:00:00         |
+| Exposure Time [%]      | 85.25                     |
+| Equity Final [$]       | 10219.319000000003        |
+| Equity Peak [$]        | 11931.856                 |
+| Return [%]             | 2.1931900000000315        |
+| Buy & Hold Return [%]  | -48.248175182481745       |
+| Return (Ann.) [%]      | 1.999380694311026         |
+| Volatility (Ann.) [%]  | 73.28168176698617         |
+| Sharpe Ratio           | 0.02728349904234538       |
+| Sortino Ratio          | 0.042370614778228975      |
+| Calmar Ratio           | 0.03929701633540951       |
+| Max. Drawdown [%]      | -50.87868954848454        |
+| Avg. Drawdown [%]      | -15.901982799845687       |
+| Max. Drawdown Duration | 156 days 00:00:00         |
+| Avg. Drawdown Duration | 48 days 00:00:00          |
+| # Trades               | 14                        |
+| ticker                 | RANK-4-KRW-WAXP           |
+| explain                | # Explain RANK-4-KRW-WAXP |

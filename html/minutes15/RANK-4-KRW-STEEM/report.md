@@ -1,0 +1,22 @@
+|                        | 0                          |
+|:-----------------------|:---------------------------|
+| Start                  | 2023-07-21 09:30:00        |
+| End                    | 2023-07-29 19:00:00        |
+| Duration               | 8 days 09:30:00            |
+| Exposure Time [%]      | 96.0                       |
+| Equity Final [$]       | 8392.603999999996          |
+| Equity Peak [$]        | 10000.0                    |
+| Return [%]             | -16.073960000000042        |
+| Buy & Hold Return [%]  | 1.2396694214876034         |
+| Return (Ann.) [%]      | -99.79736861949432         |
+| Volatility (Ann.) [%]  | 0.2181974433941609         |
+| Sharpe Ratio           | 0.0                        |
+| Sortino Ratio          | 0.0                        |
+| Calmar Ratio           | 0.0                        |
+| Max. Drawdown [%]      | -18.13674000000004         |
+| Avg. Drawdown [%]      | -18.13674000000004         |
+| Max. Drawdown Duration | 8 days 01:45:00            |
+| Avg. Drawdown Duration | 8 days 01:45:00            |
+| # Trades               | 27                         |
+| ticker                 | RANK-4-KRW-STEEM           |
+| explain                | # Explain RANK-4-KRW-STEEM |

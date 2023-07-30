@@ -1,0 +1,22 @@
+|                        | 0                         |
+|:-----------------------|:--------------------------|
+| Start                  | 2022-06-25 09:00:00       |
+| End                    | 2023-07-29 09:00:00       |
+| Duration               | 399 days 00:00:00         |
+| Exposure Time [%]      | 93.25                     |
+| Equity Final [$]       | 9692.350199999999         |
+| Equity Peak [$]        | 17538.7592                |
+| Return [%]             | -3.0764980000000106       |
+| Buy & Hold Return [%]  | -15.158924205378963       |
+| Return (Ann.) [%]      | -2.811125795719771        |
+| Volatility (Ann.) [%]  | 116.53492452719905        |
+| Sharpe Ratio           | 0.0                       |
+| Sortino Ratio          | 0.0                       |
+| Calmar Ratio           | 0.0                       |
+| Max. Drawdown [%]      | -64.99585980474882        |
+| Avg. Drawdown [%]      | -32.83677528841904        |
+| Max. Drawdown Duration | 195 days 00:00:00         |
+| Avg. Drawdown Duration | 92 days 00:00:00          |
+| # Trades               | 21                        |
+| ticker                 | RANK-4-KRW-ANKR           |
+| explain                | # Explain RANK-4-KRW-ANKR |

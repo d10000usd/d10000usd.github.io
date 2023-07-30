@@ -1,0 +1,22 @@
+|                        | 0                        |
+|:-----------------------|:-------------------------|
+| Start                  | 2023-05-23 21:00:00      |
+| End                    | 2023-07-29 09:00:00      |
+| Duration               | 66 days 12:00:00         |
+| Exposure Time [%]      | 93.5                     |
+| Equity Final [$]       | 9064.729999999994        |
+| Equity Peak [$]        | 11454.249                |
+| Return [%]             | -9.352700000000059       |
+| Buy & Hold Return [%]  | 2.666666666666673        |
+| Return (Ann.) [%]      | -40.9668430909847        |
+| Volatility (Ann.) [%]  | 35.26325874911078        |
+| Sharpe Ratio           | 0.0                      |
+| Sortino Ratio          | 0.0                      |
+| Calmar Ratio           | 0.0                      |
+| Max. Drawdown [%]      | -28.198435357918317      |
+| Avg. Drawdown [%]      | -5.61047191445983        |
+| Max. Drawdown Duration | 34 days 00:00:00         |
+| Avg. Drawdown Duration | 5 days 20:00:00          |
+| # Trades               | 18                       |
+| ticker                 | RANK-3-KRW-SSX           |
+| explain                | # Explain RANK-3-KRW-SSX |

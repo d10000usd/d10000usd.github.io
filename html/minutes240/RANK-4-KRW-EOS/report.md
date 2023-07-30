@@ -1,0 +1,22 @@
+|                        | 0                        |
+|:-----------------------|:-------------------------|
+| Start                  | 2023-05-23 21:00:00      |
+| End                    | 2023-07-29 09:00:00      |
+| Duration               | 66 days 12:00:00         |
+| Exposure Time [%]      | 88.0                     |
+| Equity Final [$]       | 8863.836                 |
+| Equity Peak [$]        | 10712.59                 |
+| Return [%]             | -11.361640000000007      |
+| Buy & Hold Return [%]  | -15.670995670995671      |
+| Return (Ann.) [%]      | -47.65781635127211       |
+| Volatility (Ann.) [%]  | 43.719187369192866       |
+| Sharpe Ratio           | 0.0                      |
+| Sortino Ratio          | 0.0                      |
+| Calmar Ratio           | 0.0                      |
+| Max. Drawdown [%]      | -29.198503816537357      |
+| Avg. Drawdown [%]      | -16.449252298811295      |
+| Max. Drawdown Duration | 53 days 08:00:00         |
+| Avg. Drawdown Duration | 29 days 02:00:00         |
+| # Trades               | 19                       |
+| ticker                 | RANK-4-KRW-EOS           |
+| explain                | # Explain RANK-4-KRW-EOS |
