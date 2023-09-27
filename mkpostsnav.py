@@ -36,8 +36,7 @@ def create_nav_structure(file_paths):
     return nav_structure
 def create_nav_structure_gitBlob(file_paths):
     bloburl = "https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/"
-    nav_structure = []
-    file_paths.sort()  # Sort file paths for consistent structure
+    nav_structure = {}  # Change to a dictionary
 
     for file_path in file_paths:
         components = file_path.split('/')
@@ -46,24 +45,14 @@ def create_nav_structure_gitBlob(file_paths):
         for i, component in enumerate(components):
             if i == len(components) - 1:
                 # Add the file if it's the last component of the file path
-                current_level.append(bloburl+file_path)
+                fn = file_path.split('/')[-1]
+                current_level[fn] = bloburl + file_path
             else:
                 # If it's a directory, add the directory and descend to the next level
-                found = False
-                for item in current_level:
-                    if isinstance(item, dict) and component in item:
-                        current_level = item[component]
-                        found = True
-                      
+                if component not in current_level:
+                    current_level[component] = {}
+                current_level = current_level[component]
 
-                        break
-
-                if not found:
-                    # If the directory hasn't been added yet, add it
-                    new_directory = {component: []}
-                    current_level.append(new_directory)
-                    current_level = new_directory[component]
-                
     return nav_structure
 def Update_posts_index():
     path = "/Users/hg/DEV/Web/WebDocuments/public/md"
@@ -93,55 +82,60 @@ def main():
     # print(file_paths)
     nav_structure = create_nav_structure(file_paths)
     nav_structure_blob = create_nav_structure_gitBlob(file_paths)
- 
 
-    bloburlInit = ["https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/"]
-    bloburlInit = [bloburlInit[0] + item for item in file_paths]
+    # bloburlInit = ["https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/"]
+    # bloburlInit = [bloburlInit[0] + item for item in file_paths]
 
 
     ## 확장자를 포함
 
     # file_dict = {os.path.basename(url): url for url in bloburlInit}
     ##  확장자  미포함
-    file_dict = {os.path.splitext(os.path.basename(url))[0]: url for url in bloburlInit}
+    # file_dict = {os.path.splitext(os.path.basename(url))[0]: url for url in bloburlInit}
  
-    nav_structure = [{'MD': nav_structure[0]['md'],
-                      'MD_blob': nav_structure_blob[0]['md'],
-                      'WebDocuments': "https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/",
-                      'WebDocumentsUrl':file_dict}]
+    # nav_structure = [{'MD': nav_structure[0]['md'],
+    #                   'MD_blob': nav_structure_blob[0]['md'],
+    #                   'WebDocuments': "https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/",
+    #                   'WebDocumentsUrl':file_dict}]
 
     # print(nav_structure)
 
-    p = f'/Users/hg/DEV/Web/hg-project-bootstrap/public/json/mkdocs_posts_nav.json'
-    nav_yaml = yaml.dump({'nav': nav_structure}, allow_unicode=True, sort_keys=False)
-    with open(f'{p}', 'w') as json_file:
-        json_file.write(json.dumps(nav_structure[0], indent=4, ensure_ascii=False,))
+    # p = f'/Users/hg/DEV/Web/hg-project-bootstrap/public/json/mkdocs_posts_nav.json'
+    # nav_yaml = yaml.dump({'nav': nav_structure}, allow_unicode=True, sort_keys=False)
+    # with open(f'{p}', 'w') as json_file:
+    #     json_file.write(json.dumps(nav_structure[0], indent=4, ensure_ascii=False,))
 
-    with open('/Users/hg/DEV/Web/hg-project-bootstrap/public/json/mkdocs_posts_nav.yml', 'w', encoding='utf-8') as file:
-        file.write(nav_yaml)
+    # with open('/Users/hg/DEV/Web/hg-project-bootstrap/public/json/mkdocs_posts_nav.yml', 'w', encoding='utf-8') as file:
+    #     file.write(nav_yaml)
     
-    p = f'/Users/hg/DEV/Web/WebDocuments/mkdocs_posts_nav.json'
-    nav_yaml = yaml.dump({'nav': nav_structure}, allow_unicode=True, sort_keys=False)
-    with open(f'{p}', 'w') as json_file:
-        json_file.write(json.dumps(nav_structure[0], indent=4, ensure_ascii=False,))
+    # p = f'/Users/hg/DEV/Web/WebDocuments/mkdocs_posts_nav.json'
+    # nav_yaml = yaml.dump({'nav': nav_structure}, allow_unicode=True, sort_keys=False)
+    # with open(f'{p}', 'w') as json_file:
+    #     json_file.write(json.dumps(nav_structure[0], indent=4, ensure_ascii=False,))
 
-    with open('/Users/hg/DEV/Web/WebDocuments/mkdocs_posts_nav.yml', 'w', encoding='utf-8') as file:
-        file.write(nav_yaml)
+    # with open('/Users/hg/DEV/Web/WebDocuments/mkdocs_posts_nav.yml', 'w', encoding='utf-8') as file:
+    #     file.write(nav_yaml)
     
 
 
     # print(f"nav_structure saved : {p}")
 
     ## gpt downloaded from web , copy to project directory that contains the markdwnwn files
-    temppath ="/Users/hg/Downloads"
-    tagetpath ="/Users/hg/DEV/Web/WebDocuments/public/md"
-    # uploadpath1 ="Usage"
-    uploadpath2 ="Post"
-    uploadpath3 ="Gpt"
+    # temppath ="/Users/hg/Downloads"
+    # tagetpath ="/Users/hg/DEV/Web/WebDocuments/public/md"
+    # # uploadpath1 ="Usage"
+    # uploadpath2 ="Post"
+    # uploadpath3 ="Gpt"
 
-    copy_file(temppath, f"{tagetpath}/{uploadpath3}")
+    # copy_file(temppath, f"{tagetpath}/{uploadpath3}")
 
-
+    nav_structure = {'Public': nav_structure[0],
+                    'Blob': nav_structure_blob,
+                 }
+    p = f'/Users/hg/DEV/Web/hg-project-bootstrap/public/json/mkdocs_posts_nav.json'
+    nav_yaml = yaml.dump({'nav': nav_structure}, allow_unicode=True, sort_keys=False)
+    with open(f'{p}', 'w') as json_file:
+        json_file.write(json.dumps(nav_structure, indent=4, ensure_ascii=False,))
 
     return nav_structure
     # data = read_yaml_file('/Users/hg/DEV/Web/hg-project-bootstrap/public/md/mkdocs_posts_nav_pp.yml')
