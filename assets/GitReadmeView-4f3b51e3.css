@@ -1,0 +1,1 @@
+.black-text{color:#000;font-size:7px}.btn-hover-effect:hover{background-color:#f2f2f2}.btn-click-effect{transition:transform .2s ease-in-out}.btn-click-effect:hover{transform:scale(1.05)}.router-view-wrapper{padding-top:0;overflow-y:auto;max-height:calc(100vh - 98px);scrollbar-width:thin;-ms-overflow-style:none}.router-view-wrapper::-webkit-scrollbar{display:none}
