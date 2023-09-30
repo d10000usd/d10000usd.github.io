@@ -83,51 +83,14 @@ def main():
     nav_structure = create_nav_structure(file_paths)
     nav_structure_blob = create_nav_structure_gitBlob(file_paths)
 
-    # bloburlInit = ["https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/"]
-    # bloburlInit = [bloburlInit[0] + item for item in file_paths]
 
+    temppath ="/Users/hg/Downloads"
+    tagetpath ="/Users/hg/DEV/Web/WebDocuments/public/md"
+    # uploadpath1 ="Usage"
+    uploadpath2 ="Post"
+    uploadpath3 ="Gpt"
 
-    ## 확장자를 포함
-
-    # file_dict = {os.path.basename(url): url for url in bloburlInit}
-    ##  확장자  미포함
-    # file_dict = {os.path.splitext(os.path.basename(url))[0]: url for url in bloburlInit}
- 
-    # nav_structure = [{'MD': nav_structure[0]['md'],
-    #                   'MD_blob': nav_structure_blob[0]['md'],
-    #                   'WebDocuments': "https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/",
-    #                   'WebDocumentsUrl':file_dict}]
-
-    # print(nav_structure)
-
-    # p = f'/Users/hg/DEV/Web/hg-project-bootstrap/public/json/mkdocs_posts_nav.json'
-    # nav_yaml = yaml.dump({'nav': nav_structure}, allow_unicode=True, sort_keys=False)
-    # with open(f'{p}', 'w') as json_file:
-    #     json_file.write(json.dumps(nav_structure[0], indent=4, ensure_ascii=False,))
-
-    # with open('/Users/hg/DEV/Web/hg-project-bootstrap/public/json/mkdocs_posts_nav.yml', 'w', encoding='utf-8') as file:
-    #     file.write(nav_yaml)
-    
-    # p = f'/Users/hg/DEV/Web/WebDocuments/mkdocs_posts_nav.json'
-    # nav_yaml = yaml.dump({'nav': nav_structure}, allow_unicode=True, sort_keys=False)
-    # with open(f'{p}', 'w') as json_file:
-    #     json_file.write(json.dumps(nav_structure[0], indent=4, ensure_ascii=False,))
-
-    # with open('/Users/hg/DEV/Web/WebDocuments/mkdocs_posts_nav.yml', 'w', encoding='utf-8') as file:
-    #     file.write(nav_yaml)
-    
-
-
-    # print(f"nav_structure saved : {p}")
-
-    ## gpt downloaded from web , copy to project directory that contains the markdwnwn files
-    # temppath ="/Users/hg/Downloads"
-    # tagetpath ="/Users/hg/DEV/Web/WebDocuments/public/md"
-    # # uploadpath1 ="Usage"
-    # uploadpath2 ="Post"
-    # uploadpath3 ="Gpt"
-
-    # copy_file(temppath, f"{tagetpath}/{uploadpath3}")
+    copy_file(temppath, f"{tagetpath}/{uploadpath3}")
 
     nav_structure = {'Public': nav_structure[0],
                     'Blob': nav_structure_blob,
@@ -137,6 +100,18 @@ def main():
     with open(f'{p}', 'w') as json_file:
         json_file.write(json.dumps(nav_structure, indent=4, ensure_ascii=False,))
 
+    with open('/Users/hg/DEV/Web/hg-project-bootstrap/public/json/kdocs_posts_nav.yml', 'w', encoding='utf-8') as file:
+        file.write(nav_yaml)
+    
+
+    p = f'/Users/hg/DEV/Web/WebDocuments/mkdocs_posts_nav.json'
+    nav_yaml = yaml.dump({'nav': nav_structure}, allow_unicode=True, sort_keys=False)
+    with open(f'{p}', 'w') as json_file:
+        json_file.write(json.dumps(nav_structure, indent=4, ensure_ascii=False,))
+
+    with open('/Users/hg/DEV/Web/WebDocuments/mkdocs_posts_nav.yml', 'w', encoding='utf-8') as file:
+        file.write(nav_yaml)
+    
     return nav_structure
     # data = read_yaml_file('/Users/hg/DEV/Web/hg-project-bootstrap/public/md/mkdocs_posts_nav_pp.yml')
     # 
