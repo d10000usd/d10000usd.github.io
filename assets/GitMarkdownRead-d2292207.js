@@ -1,1 +1,0 @@
-function n(c){const o=/```[\s\S]*?```/g;return c.match(o)}async function a(c){try{const t=await(await fetch(c)).text(),e=n(t);return e||console.log("No code blocks found in the markdown."),{WebDocuments:t,codeblock:e||[],check:{api:"local",path:"indi",repeatCount:2,rowtype:1}}}catch(o){console.error(o);return}}export{a as f};

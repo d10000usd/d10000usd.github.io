@@ -1,1 +1,0 @@
-const t=(e,r)=>Math.floor(Math.random()*(r-e+1))+e,n=()=>`https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/icon/space/workspace-vector-free-icon-set-${t(12,40)}.png`;export{n as a,t as g};
