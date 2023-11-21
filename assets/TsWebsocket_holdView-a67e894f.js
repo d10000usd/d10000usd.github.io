@@ -1,0 +1,1 @@
+import{_}from"./TsWebsocket_hold-a0deead8.js";import{_ as e,o,l as s}from"./index-28cbae50.js";import"./WebsocketConnector-46e02d48.js";import"./TsWebsocket_table-262eb8de.js";const t={__name:"TsWebsocket_holdView",setup(c){return(a,r)=>(o(),s(_))}},l=e(t,[["__scopeId","data-v-58388d13"]]);export{l as default};
