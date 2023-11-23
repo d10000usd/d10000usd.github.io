@@ -1,1 +1,0 @@
-import{_ as e}from"./TsWebsocket_watch-2feb416e.js";import{_,o as t,l as o}from"./index-a3e4765c.js";import"./TsWebsocket_table-ce61cc6e.js";import"./TelegramMsg-52cae656.js";import"./WebsocketConnector-ce0e9e4f.js";const s={__name:"TsWebsocket_watchView",setup(a){return(c,r)=>(t(),o(e))}},d=_(s,[["__scopeId","data-v-a34efd5a"]]);export{d as default};
