@@ -1,0 +1,1 @@
+import{T as e}from"./TelegramMsg-b8052718.js";import{_,o as a,m as o}from"./index-1fe36a72.js";const r={__name:"TelegramView",setup(s){return(t,c)=>(a(),o(e))}},n=_(r,[["__scopeId","data-v-af496339"]]);export{n as default};

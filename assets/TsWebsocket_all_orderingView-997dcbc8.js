@@ -1,1 +1,0 @@
-import{_}from"./TsWebsocket_all_ordering-29bf00d6.js";import{_ as e,o,m as s}from"./index-fea38b97.js";import"./WebsocketConnector-6b04952b.js";const t={__name:"TsWebsocket_all_orderingView",setup(r){return(a,c)=>(o(),s(_))}},l=e(t,[["__scopeId","data-v-09540ff7"]]);export{l as default};
