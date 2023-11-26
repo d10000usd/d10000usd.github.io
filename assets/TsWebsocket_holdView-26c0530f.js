@@ -1,0 +1,1 @@
+import{_}from"./TsWebsocket_hold-2bd00d14.js";import{_ as e,o,q as s}from"./index-4da60bf1.js";import"./WebsocketConnector-38de4fb7.js";import"./TsWebsocket_table-2135dabc.js";import"./TelegramMsg-c7865a1a.js";const t={__name:"TsWebsocket_holdView",setup(c){return(r,a)=>(o(),s(_))}},l=e(t,[["__scopeId","data-v-58388d13"]]);export{l as default};
