@@ -1,4 +1,4 @@
-import{a,t as o}from"./telegramini-40e3a79c.js";import{r as n}from"./index-85b8b1f1.js";const r="6"+o.t,g="1"+o.i,i=n(""),c=async e=>{try{const s=`
+import{a,t as o}from"./telegramini-40e3a79c.js";import{r as n}from"./index-cc8b152a.js";const r="6"+o.t,g="1"+o.i,i=n(""),c=async e=>{try{const s=`
 
 <span class="tg-spoiler">spoiler</span>
 <b>Alarm</b> - <strong>Setting values enough</strong>
