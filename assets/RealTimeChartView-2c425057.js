@@ -1,4 +1,4 @@
-import{W as M,r as R}from"./WebsocketConnector-97256fd0.js";import{r as i,f as d,l as W,w as E,z as B,_ as C,g as w,o as m,c as b,a as s,t as _,n as U,u as o,F as j,p as x,k as S,q as $,b as L,m as h,v as p,e as A,d as N}from"./index-779b63d9.js";import{a as z,t as y}from"./telegramini-40e3a79c.js";const K="6"+y.t,P="1"+y.i,f=i(""),F=async n=>{try{const e=`
+import{W as M,r as R}from"./WebsocketConnector-312abdef.js";import{r as i,f as d,l as W,w as E,z as B,_ as C,g as w,o as m,c as b,a as s,t as _,n as U,u as o,F as j,p as x,k as S,q as $,b as L,m as h,v as p,e as A,d as N}from"./index-8f17db78.js";import{a as z,t as y}from"./telegramini-40e3a79c.js";const K="6"+y.t,P="1"+y.i,f=i(""),F=async n=>{try{const e=`
 <span class="tg-spoiler">spoiler</span>
 <b>Alarm</b> - <strong>Setting values enough</strong>
 <i>Value changes </i> 
