@@ -1,0 +1,516 @@
+{
+  "newsSystem": {
+    "name": "scrape",
+    "description": "네이버 뉴스 검색어 기반 뉴스 기사 크롤링 및 파싱",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "검색할 뉴스 키워드"
+        },
+        "max_articles": {
+          "type": "integer",
+          "description": "가져올 최대 기사 수",
+          "default": 5
+        }
+      },
+      "required": ["query"]
+    }
+  },
+  "fileSystem": [
+    {
+      "name": "create_file",
+      "description": "새 파일을 생성합니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "content": { "type": "string" }
+        },
+        "required": ["path", "content"]
+      }
+    },
+    {
+      "name": "directory_tree",
+      "description": "재귀적으로 경로 내 모든 내용을 트리 구조로 나열합니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "트리 구조로 나열할 디렉토리 경로 (빈 문자열이면 루트 디렉토리)",
+            "default": ""
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "rename",
+      "description": "파일 또는 폴더 이름을 변경합니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "old_path": { "type": "string" },
+          "new_name": { "type": "string" }
+        },
+        "required": ["old_path", "new_name"]
+      }
+    },
+    {
+      "name": "read_file",
+      "description": "파일 내용을 읽습니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "write_file",
+      "description": "파일에 내용을 씁니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "content": { "type": "string" },
+          "append": { "type": "boolean" }
+        },
+        "required": ["path", "content"]
+      }
+    },
+    {
+      "name": "delete_file",
+      "description": "파일을 삭제합니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "list_directory",
+      "description": "디렉토리 내용을 나열합니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "create_directory",
+      "description": "새 디렉토리를 생성합니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "get_file_info",
+      "description": "파일 정보를 가져옵니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    }
+  ],
+  "kakaoSystem": [
+    {
+      "name": "send_text_message",
+      "description": "카카오톡 텍스트 메시지 전송",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "전송할 텍스트 내용 (필수)"
+          },
+          "link_url": {
+            "type": "string",
+            "description": "버튼 클릭 시 이동할 링크 (옵션)",
+            "default": "https://developers.kakao.com"
+          },
+          "button_title": {
+            "type": "string",
+            "description": "버튼에 표시될 텍스트 (옵션)",
+            "default": "👉 확인하기"
+          }
+        },
+        "required": ["text"]
+      }
+    },
+    {
+      "name": "send_commerce_message",
+      "description": "카카오톡 커머스 메시지 전송",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "상품명 또는 프로모션 타이틀"
+          },
+          "description": {
+            "type": "string",
+            "description": "상품에 대한 간단한 설명"
+          },
+          "image_url": {
+            "type": "string",
+            "description": "상품 대표 이미지 URL"
+          },
+          "link_url": {
+            "type": "string",
+            "description": "상품 상세 페이지 링크"
+          },
+          "regular_price": {
+            "type": "number",
+            "description": "정상가 (할인 전 가격)"
+          },
+          "discount_price": {
+            "type": "number",
+            "description": "할인가 (할인 적용 가격)"
+          },
+          "discount_rate": {
+            "type": "number",
+            "description": "할인율 (%)",
+            "default": 0
+          },
+          "fixed_discount_price": {
+            "type": "number",
+            "description": "정액 할인 금액 (고정 차감)",
+            "default": 0
+          },
+          "buttons": {
+            "type": "array",
+            "description": "메시지에 들어갈 버튼 배열",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "link": { "type": "string" }
+              },
+              "required": ["title", "link"]
+            }
+          }
+        },
+        "required": [
+          "title",
+          "description",
+          "image_url",
+          "link_url",
+          "regular_price",
+          "discount_price"
+        ]
+      }
+    }
+  ],
+  "telegramSystem": [
+    {
+      "name": "send_messages",
+      "description": "문자열 메시지를 순차 전송",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "messages": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "전송할 메시지 배열"
+          }
+        },
+        "required": ["messages"]
+      }
+    },
+    {
+      "name": "send_single_message",
+      "description": "단일 문자열 메시지를 전송",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "전송할 메시지"
+          }
+        },
+        "required": ["message"]
+      }
+    },
+    {
+      "name": "send_photos",
+      "description": "이미지를 전송 (URL 또는 로컬) + 메시지 가능",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "photos": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "이미지 경로 또는 URL 배열"
+          },
+          "captions": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "이미지 캡션 배열"
+          },
+          "messages": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "추가 메시지 배열"
+          }
+        },
+        "required": ["photos"]
+      }
+    },
+    {
+      "name": "send_documents",
+      "description": "문서를 전송 (PDF, ZIP 등) + 메시지 가능",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "docs": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "문서 파일 경로 또는 URL 배열"
+          },
+          "captions": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "문서 캡션 배열"
+          },
+          "messages": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "추가 메시지 배열"
+          }
+        },
+        "required": ["docs"]
+      }
+    },
+    {
+      "name": "send_poll",
+      "description": "투표 생성 + 안내 메시지 가능",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "투표 질문"
+          },
+          "options": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "투표 선택지 배열"
+          },
+          "multiple": {
+            "type": "boolean",
+            "description": "복수 선택 허용 여부",
+            "default": false
+          },
+          "messages": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "추가 메시지 배열"
+          }
+        },
+        "required": ["question", "options"]
+      }
+    }
+  ],
+  "stockCandleSystem": [
+    {
+      "name": "fetch_stock_candles",
+      "description": "주식 캔들 데이터를 비동기로 수집합니다 (저장옵션 지원)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "stocks": {
+            "description": "카테고리 기반 주식 딕셔너리 (객체 혹은 JSON 문자열)"
+          },
+          "start_date": {
+            "type": "string",
+            "description": "시작일 (YYYY-MM-DD)"
+          },
+          "filepath": {
+            "type": "string",
+            "description": "저장할 파일 경로"
+          }
+        },
+        "required": ["stocks", "start_date"]
+      }
+    },
+    {
+      "name": "fetch_stock_by_date",
+      "description": "특정 날짜 하루치 주가 데이터를 가져옵니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ticker": {
+            "type": "string",
+            "description": "종목 코드 (예: 005930)"
+          },
+          "date": {
+            "type": "string",
+            "description": "조회할 날짜 (YYYY-MM-DD)"
+          }
+        },
+        "required": ["ticker", "date"]
+      }
+    },
+    {
+      "name": "save_to_file",
+      "description": "최근 수집된 데이터를 파일에 저장합니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "filepath": {
+            "type": "string",
+            "description": "저장할 파일 경로"
+          }
+        },
+        "required": ["filepath"]
+      }
+    },
+    {
+      "name": "read_json_file",
+      "description": "지정한 경로의 파일(JSON)을 읽습니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "filepath": {
+            "type": "string",
+            "description": "읽을 파일 경로"
+          }
+        },
+        "required": ["filepath"]
+      }
+    }
+  ],
+  "redisSystem": [
+    {
+      "name": "get_multiple_market_data",
+      "description": "마켓데이터 여러 필드 한번에 읽기",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "description": "Redis 해시 키"
+          },
+          "fields": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "가져올 필드 배열"
+          }
+        },
+        "required": ["key", "fields"]
+      }
+    },
+    {
+      "name": "get_multiple_hash_value_data",
+      "description": "hash에 속한 키에서 벨류 여러 필드 한번에 읽기",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "description": "Redis 해시 키"
+          },
+          "fields": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "가져올 필드 배열"
+          }
+        },
+        "required": ["key", "fields"]
+      }
+    },
+    {
+      "name": "get_hash",
+      "description": "Redis에 저장된 특정 해시(key)의 데이터를 읽어오기",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "description": "대상 Redis 해시 키",
+            "default": "ai_conversations"
+          },
+          "fields": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "선택적으로 가져올 필드 배열 (없으면 전체 해시 반환)"
+          }
+        },
+        "required": ["key", "fields"]
+      }
+    },
+    {
+      "name": "save_hash",
+      "description": "Redis 해시에 데이터를 저장하기",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "object",
+            "description": "저장할 데이터 (dict 형식, 각 값은 JSON 직렬화됨)"
+          },
+          "key": {
+            "type": "string",
+            "description": "저장할 Redis 해시 키",
+            "default": "ai_conversations"
+          }
+        },
+        "required": ["items", "key"]
+      }
+    },
+    {
+      "name": "get_all_keys",
+      "description": "Redis에 저장된 키 전체 조회, 선택적 패턴 매칭 지원",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pattern": {
+            "type": "string",
+            "description": "조회할 키 패턴, 기본값은 전체 키 조회(*)"
+          }
+        },
+        "required": []
+      }
+    }
+  ],
+
+  "timeSystem": [
+    {
+      "name": "get_current_time",
+      "description": "현재 날짜와 시간을 가져옵니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get_timezone_time",
+      "description": "특정 시간대의 시간을 가져옵니다",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timezone": {
+            "type": "string",
+            "description": "시간대 이름 (예: Asia/Seoul, America/New_York)",
+            "default": "UTC"
+          }
+        }
+      }
+    }
+  ]
+}

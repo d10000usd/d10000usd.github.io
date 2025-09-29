@@ -1,0 +1,96 @@
+{
+    "name": "statics",
+    "path": "",
+    "type": "directory",
+    "children": [
+        {
+            "name": ".DS_Store",
+            "path": ".DS_Store",
+            "type": "file"
+        },
+        {
+            "name": "all_stocks.json",
+            "path": "all_stocks.json",
+            "type": "file"
+        },
+        {
+            "name": "chart",
+            "path": "chart",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "TOOL_SCHEMAS.py",
+                    "path": "chart/TOOL_SCHEMAS.py",
+                    "type": "file"
+                },
+                {
+                    "name": "all_stocks.json",
+                    "path": "chart/all_stocks.json",
+                    "type": "file"
+                },
+                {
+                    "name": "mcp.md",
+                    "path": "chart/mcp.md",
+                    "type": "file"
+                },
+                {
+                    "name": "messages.json",
+                    "path": "chart/messages.json",
+                    "type": "file"
+                },
+                {
+                    "name": "presetConditions.json",
+                    "path": "chart/presetConditions.json",
+                    "type": "file"
+                },
+                {
+                    "name": "quickExamples.json",
+                    "path": "chart/quickExamples.json",
+                    "type": "file"
+                },
+                {
+                    "name": "serverInfo.json",
+                    "path": "chart/serverInfo.json",
+                    "type": "file"
+                },
+                {
+                    "name": "theme.json",
+                    "path": "chart/theme.json",
+                    "type": "file"
+                },
+                {
+                    "name": "too_call.md",
+                    "path": "chart/too_call.md",
+                    "type": "file"
+                },
+                {
+                    "name": "toolcall.json",
+                    "path": "chart/toolcall.json",
+                    "type": "file"
+                },
+                {
+                    "name": "tree.json",
+                    "path": "chart/tree.json",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "stock_data.json",
+            "path": "stock_data.json",
+            "type": "file"
+        },
+        {
+            "name": "test",
+            "path": "test",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "append_example.txt",
+                    "path": "test/append_example.txt",
+                    "type": "file"
+                }
+            ]
+        }
+    ]
+}

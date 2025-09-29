@@ -1,0 +1,177 @@
+[
+    {
+        "name": "우량주 선별",
+        "icon": "💎",
+        "description": "ROE 15% 이상, 부채비율 100% 이하, 영업이익률 10% 이상",
+        "conditions": [
+            { "metric": "ROE(%)", "operator": "gte", "value": 15, "logic": "AND" },
+            { "metric": "부채비율", "operator": "lte", "value": 100, "logic": "AND" },
+            { "metric": "영업이익률", "operator": "gte", "value": 10 }
+        ]
+    },
+    {
+        "name": "성장주 선별",
+        "icon": "🚀",
+        "description": "매출액 1000억 이상, ROE 12% 이상, PER 25배 이하",
+        "conditions": [
+            { "metric": "매출액", "operator": "gte", "value": 1000, "logic": "AND" },
+            { "metric": "ROE(%)", "operator": "gte", "value": 12, "logic": "AND" },
+            { "metric": "PER(배)", "operator": "lte", "value": 25 }
+        ]
+    },
+    {
+        "name": "배당주 선별",
+        "icon": "💰",
+        "description": "배당수익률 3% 이상, 배당성향 60% 이하, FCF 양수",
+        "conditions": [
+            { "metric": "현금배당수익률", "operator": "gte", "value": 3, "logic": "AND" },
+            { "metric": "현금배당성향(%)", "operator": "lte", "value": 60, "logic": "AND" },
+            { "metric": "FCF", "operator": "gt", "value": 0 }
+        ]
+    },
+    {
+        "name": "리스크 회피형",
+        "icon": "🛡️",
+        "description": "부채비율 50% 이하, 자본총계 양수, 영업CF 양수, 이자커버리지 안전",
+        "conditions": [
+            { "metric": "부채비율", "operator": "lte", "value": 50, "logic": "AND" },
+            { "metric": "자본총계", "operator": "gt", "value": 0, "logic": "AND" },
+            { "metric": "영업활동현금흐름", "operator": "gt", "value": 0, "logic": "AND" },
+            { "metric": "이자발생부채", "operator": "lte", "value": 1000 }
+        ]
+    },
+    {
+        "name": "가치주 발굴",
+        "icon": "💡",
+        "description": "PER 15배 이하, PBR 2배 이하, ROE 8% 이상, 순이익률 양수",
+        "conditions": [
+            { "metric": "PER(배)", "operator": "lte", "value": 15, "logic": "AND" },
+            { "metric": "PBR(배)", "operator": "lte", "value": 2, "logic": "AND" },
+            { "metric": "ROE(%)", "operator": "gte", "value": 8, "logic": "AND" },
+            { "metric": "순이익률", "operator": "gt", "value": 0 }
+        ]
+    },
+    {
+        "name": "현금 창출형",
+        "icon": "💵",
+        "description": "영업CF 양수, FCF 양수, 영업CF > 당기순이익, 투자CF 적정",
+        "conditions": [
+            { "metric": "영업활동현금흐름", "operator": "gt", "value": 0, "logic": "AND" },
+            { "metric": "FCF", "operator": "gt", "value": 0, "logic": "AND" },
+            { "metric": "투자활동현금흐름", "operator": "gte", "value": -2000 }
+        ]
+    },
+    {
+        "name": "부채 위험 회피",
+        "icon": "⚠️",
+        "description": "부채비율 30% 이하, 이자발생부채 최소, 자본유보율 100% 이상",
+        "conditions": [
+            { "metric": "부채비율", "operator": "lte", "value": 30, "logic": "AND" },
+            { "metric": "이자발생부채", "operator": "lte", "value": 500, "logic": "AND" },
+            { "metric": "자본유보율", "operator": "gte", "value": 100 }
+        ]
+    },
+    {
+        "name": "대형주 안정형",
+        "icon": "🏛️",
+        "description": "매출액 5000억 이상, 자산총계 1조 이상, ROA 3% 이상",
+        "conditions": [
+            { "metric": "매출액", "operator": "gte", "value": 5000, "logic": "AND" },
+            { "metric": "자산총계", "operator": "gte", "value": 10000, "logic": "AND" },
+            { "metric": "ROA(%)", "operator": "gte", "value": 3 }
+        ]
+    },
+    {
+        "name": "소형주 성장형",
+        "icon": "🌱",
+        "description": "매출액 1000억 이하, ROE 20% 이상, 영업이익률 15% 이상",
+        "conditions": [
+            { "metric": "매출액", "operator": "lte", "value": 1000, "logic": "AND" },
+            { "metric": "ROE(%)", "operator": "gte", "value": 20, "logic": "AND" },
+            { "metric": "영업이익률", "operator": "gte", "value": 15 }
+        ]
+    },
+    {
+        "name": "밸류에이션 매력",
+        "icon": "🎯",
+        "description": "PER 10배 이하, PBR 1.5배 이하, ROE 10% 이상, EPS 양수",
+        "conditions": [
+            { "metric": "PER(배)", "operator": "lte", "value": 10, "logic": "AND" },
+            { "metric": "PBR(배)", "operator": "lte", "value": 1.5, "logic": "AND" },
+            { "metric": "ROE(%)", "operator": "gte", "value": 10, "logic": "AND" },
+            { "metric": "EPS(원)", "operator": "gt", "value": 0 }
+        ]
+    },
+    {
+        "name": "투자 위험 신호",
+        "icon": "🚨",
+        "description": "부채비율 200% 이상, 영업CF 음수, ROE 음수 (위험 종목)",
+        "conditions": [
+            { "metric": "부채비율", "operator": "gte", "value": 200, "logic": "OR" },
+            { "metric": "영업활동현금흐름", "operator": "lt", "value": 0, "logic": "OR" },
+            { "metric": "ROE(%)", "operator": "lt", "value": 0 }
+        ]
+    },
+    {
+        "name": "고수익 고위험",
+        "icon": "⚡",
+        "description": "ROE 25% 이상, 영업이익률 20% 이상, 변동성 수용",
+        "conditions": [
+            { "metric": "ROE(%)", "operator": "gte", "value": 25, "logic": "AND" },
+            { "metric": "영업이익률", "operator": "gte", "value": 20, "logic": "AND" },
+            { "metric": "순이익률", "operator": "gte", "value": 15 }
+        ]
+    },
+    {
+        "name": "재무 건전성",
+        "icon": "🏥",
+        "description": "부채비율 70% 이하, 자본유보율 50% 이상, 유동비율 안정",
+        "conditions": [
+            { "metric": "부채비율", "operator": "lte", "value": 70, "logic": "AND" },
+            { "metric": "자본유보율", "operator": "gte", "value": 50, "logic": "AND" },
+            { "metric": "자본총계", "operator": "gte", "value": 1000 }
+        ]
+    },
+    {
+        "name": "배당 귀족주",
+        "icon": "👑",
+        "description": "배당수익률 4% 이상, 배당성향 40% 이하, 배당 지속성",
+        "conditions": [
+            { "metric": "현금배당수익률", "operator": "gte", "value": 4, "logic": "AND" },
+            { "metric": "현금배당성향(%)", "operator": "lte", "value": 40, "logic": "AND" },
+            { "metric": "FCF", "operator": "gte", "value": 100, "logic": "AND" },
+            { "metric": "현금DPS(원)", "operator": "gt", "value": 0 }
+        ]
+    },
+    {
+        "name": "턴어라운드 후보",
+        "icon": "🔄",
+        "description": "부채비율 개선 여지, 자산 대비 저평가, 회복 잠재력",
+        "conditions": [
+            { "metric": "부채비율", "operator": "between", "minValue": 100, "maxValue": 200, "logic": "AND" },
+            { "metric": "PBR(배)", "operator": "lte", "value": 1, "logic": "AND" },
+            { "metric": "자산총계", "operator": "gte", "value": 2000 }
+        ]
+    },
+    {
+        "name": "캐시카우형",
+        "icon": "🐄",
+        "description": "영업CF 일정, 배당 안정, 성숙 사업모델",
+        "conditions": [
+            { "metric": "영업활동현금흐름", "operator": "gte", "value": 500, "logic": "AND" },
+            { "metric": "FCF", "operator": "gte", "value": 200, "logic": "AND" },
+            { "metric": "현금배당수익률", "operator": "gte", "value": 2, "logic": "AND" },
+            { "metric": "부채비율", "operator": "lte", "value": 80 }
+        ]
+    },
+    {
+        "name": "혁신 성장주",
+        "icon": "🌟",
+        "description": "R&D 투자 활발, 높은 성장성, 미래 가치",
+        "conditions": [
+            { "metric": "ROE(%)", "operator": "gte", "value": 18, "logic": "AND" },
+            { "metric": "영업이익률", "operator": "gte", "value": 12, "logic": "AND" },
+            { "metric": "PER(배)", "operator": "between", "minValue": 15, "maxValue": 35 }
+        ]
+    }
+]

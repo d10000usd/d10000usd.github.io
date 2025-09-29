@@ -1,0 +1,251 @@
+{
+  "endpoint": {
+    "information": {
+      "ip": "112.165.191.22",
+      "port": 1338,
+      "backendProxies": {
+        "common_ip": "172.30.1.11",
+        "services": {
+          "news": {
+            "port": 7001,
+            "routes": {
+              "search": "/news/1/search",
+              "dict": "/news/1/dict",
+              "stockimg": "/news/1/stockimg",
+              "stockdata": "/news/1/stockdata",
+              "reportdata": "/news/1/reportdata",
+              "reportdata_group": "/news/1/reportdata_group"
+            }
+          },
+          "stock": {
+            "port": 7002,
+            "routes": {
+              "search": "/stock/2/search",
+              "dict": "/stock/2/dict",
+              "KQ": "/stock/1/download.candle",
+              "KS": "/stock/1/download.candle"
+            }
+          },
+          "ai": {
+            "port": 7003,
+            "routes": {
+              "chat": "/ai/3/chat",
+              "search": "/ai/3/search",
+              "dict": "/ai/3/dict",
+              "langchain": "/ai/3/langchain",
+              "rag": "/ai/3/rag",
+              "rag_ask": "/ai/3/rag_ask",
+              "loadpdf": "/ai/3/loadpdf",
+              "histroy_ask": "/ai/3/histroy_ask"
+            }
+          }
+        }
+      }
+    },
+    "paths": {
+      "newssearch": "/news/search",
+      "newsapidict": "/news/dict",
+      "newsapiHtml": "/news/html",
+      "stockapiurl": "/url",
+      "analysis": "/analysis",
+      "searchfromdict": "/searchfromdict",
+      "historyhtml": "/api/1/search.naver.historyhtml?pages=54",
+      "historyhtmldict": "/api/1/search.naver.historyhtml.full.data?pages=54",
+      "history": "/api/1/search.naver.history?sm=1&pages=2&search=삼성전자+ETF&where=extention",
+      "gitjson": "https://raw.githubusercontent.com/d10000usd/WebDocuments/main/public/mkdocs_posts_nav.json",
+      "historyhtml_lately_2ea": "/api/1/search.naver.historyhtml?pages=2",
+      "stockdata": "/api/1/search.stock.today.price?sm=1&pages=1&stockcode=009520&market=KQ",
+      "stockdata_aselected": "/api/1/search.stock.today.price.filter",
+      "download": "/down/1",
+      "news": "news/1",
+      "stock": "stock/1",
+      "chart": "chart/1",
+      "information": "information/",
+      "fundmental_eps_realtime": "/api/1/search.stock.today.price.realtime?sm=1&pages=1&stockcode=009520&market=KQ",
+      "fundmental_eps": "/api/1/search.stock.today.price?sm=1&pages=1&stockcode=009520&market=KQ",
+      "KQ": "/stock/1/download.candle?market=KQ",
+      "KS": "/stock/1/download.candle?market=KS",
+      "aichat": "/aichat/1",
+      "aisearch": "/aisearch"
+    },
+    "localpath": {
+      "mkdocs_posts_nav": "@/assets/json/news_json_history_stack_dict.json",
+      "news_json_history_html": "@/assets/json/news_json_history_html.json",
+      "news_json_history_stack_dict": "@/assets/json/news_json_history_stack_dict.json",
+      "news_json_history": "@/assets/json/news_json_history.json"
+    },
+    "public_path": {
+      "news_dict_full": "json/news/news_dict_full.json"
+    }
+  },
+  "chat": {
+    "type": "ollama",
+    "ask": "hi",
+    "response": ""
+  },
+  "datarequest": {
+    "datarequest": {
+      "checkstate": false,
+      "searchquery": "",
+      "responseData": true,
+      "isSearching": false,
+      "searchNewsNaver_period": {
+        "selectedday": {
+          "state": "news",
+          "de": "2022.01.17",
+          "ds": "2022.01.17"
+        },
+        "range": {
+          "state": "news",
+          "de": "2022.01.17",
+          "ds": "2024.01.15"
+        }
+      },
+      "sendRequestData": {
+        "stockreq": {
+          "id": 1,
+          "name": "stock",
+          "payload": {
+            "search": "009520",
+            "market": "KQ",
+            "stockKorName": "삼성전자컴퍼니"
+          }
+        },
+        "newsreq": {
+          "id": 1,
+          "name": "news",
+          "payload": {
+            "search": "Initialize data on server",
+            "pageDate": 11,
+            "pages": 2,
+            "sort": 0,
+            "newsEditSettings": {
+              "stockExistsCnt": 12,
+              "searchKeywordValueWeight": 1,
+              "filter_journal": [
+                "yonhapnewstv",
+                "nongaek",
+                "ytn",
+                "jnilbo",
+                "asiaa",
+                "youthdaily",
+                "shinailbo",
+                "bzeronews",
+                "globalepic",
+                "dailypharm",
+                "sbs",
+                "spotvnews",
+                "naeil",
+                "vop",
+                "newsen",
+                "zdnet",
+                "mydaily",
+                "kbs",
+                "jbnews",
+                "m-i",
+                "nbntv",
+                "laborplus",
+                "yna",
+                "kbench",
+                "hankyung",
+                ""
+              ],
+              "stock_remove_list": [
+                "LG",
+                "하이닉스",
+                "SK",
+                "삼성",
+                "현대",
+                "lg",
+                "롯데",
+                "CJ",
+                "sk",
+                "LS",
+                "은행",
+                "두산",
+                "투자",
+                "개발",
+                "건설",
+                "화학",
+                "정유",
+                "석유",
+                "홀딩",
+                "우",
+                "지주",
+                "증권",
+                "흥국",
+                "생명",
+                "경제",
+                "엔터",
+                "금융",
+                "카카오",
+                "기아",
+                "셀트리온",
+                "KT",
+                "전방",
+                "GS",
+                "국보",
+                "선진",
+                "나노",
+                "태양",
+                "상보",
+                "진영",
+                "스펙",
+                "텍",
+                "인베스트먼트",
+                "SG",
+                "SGA",
+                "세방",
+                "금양",
+                "LF",
+                "후성",
+                "남성",
+                "한섬",
+                "3S",
+                "디오",
+                "하이브",
+                "율촌",
+                "EG",
+                "ES",
+                "테크",
+                "대유",
+                "신원",
+                "효성",
+                "한진",
+                "TP",
+                "DS",
+                "DL",
+                "OCI",
+                "KBG",
+                "KCC",
+                "풍산",
+                "한창",
+                "아바코",
+                "컴퍼니",
+                "오공",
+                "손오공",
+                "게임"
+              ]
+            },
+            "period": {
+              "selectedday": {
+                "state": "news",
+                "de": "2024.01.17",
+                "ds": "2024.05.17"
+              },
+              "range": {
+                "state": "news",
+                "de": "2024.01.17",
+                "ds": "2024.05.15"
+              }
+            }
+          },
+          "newsEditOption": {
+            "searchLink": "https://search.naver.com/search.naver?where=news&query=%ED%85%8C%EC%8A%AC%EB%9D%BC%20%EC%A3%BC%EA%B0%80&sm=tab_opt&sort=1&photo=0&field=0&pd=0&ds=&de=&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so%3Add%2Cp%3Aall&is_sug_officeid=0&office_category=0&service_area=0",
+            "editLink": ""
+          }
+        }
+      }
+    }
+  }
+}
