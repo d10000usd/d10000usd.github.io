@@ -81,6 +81,18 @@
             "type": "file"
         },
         {
+            "name": "tech_candles",
+            "path": "tech_candles",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "tech_candles_20250901.json",
+                    "path": "tech_candles/tech_candles_20250901.json",
+                    "type": "file"
+                }
+            ]
+        },
+        {
             "name": "test",
             "path": "test",
             "type": "directory",
