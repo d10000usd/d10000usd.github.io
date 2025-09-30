@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <title>2차 다항 회귀 | Polynomial Regression 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; }
+    .card { backdrop-filter: blur(12px); }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+    .text-glow { text-shadow: 0 0 12px rgba(59, 130, 246, 0.9); }
+    .glass { background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center p-6">
+
+  <section class="w-full max-w-5xl">
+    <div class="card glass rounded-2xl p-8 md:p-12 shadow-2xl">
+      <h1 class="text-4xl md:text-5xl font-bold text-glow mb-4">2차 다항 회귀</h1>
+      <p class="text-slate-300 mb-8">Polynomial Regression 2</p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-semibold mb-3 text-sky-300">핵심 개념</h2>
+          <p class="text-slate-200">독립변수와 종속변수 사이의 비선형 관계를 2차 곡선으로 추정합니다. 단일 특성 x에 대해 y = w₂x² + w₁x + w₀ 꼴로 모델링합니다.</p>
+        </div>
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-semibold mb-3 text-sky-300">활용 분야</h2>
+          <ul class="list-disc list-inside text-slate-200 space-y-1">
+            <li>경제 지표 예측</li>
+            <li>주가·환율 추세 분석</li>
+            <li>공학 최적화 문제</li>
+            <li>마케팅 반응 곡선</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="glass rounded-xl p-6 mb-8">
+        <h2 class="text-xl font-semibold mb-4 text-sky-300">회귀식</h2>
+        <div class="bg-slate-800 rounded-lg p-4 text-center">
+          <span class="text-2xl font-mono text-slate-100">y = w₂x² + w₁x + w₀</span>
+        </div>
+        <p class="text-slate-300 mt-3">최소제곱법으로 w₂, w₁, w₀를 추정하며, 과적합 방지를 위해 교차 검증 및 규제 기법을 적용합니다.</p>
+      </div>
+
+      <div class="text-center">
+        <button onclick="window.history.back()" class="bg-sky-600 hover:bg-sky-500 text-white font-semibold px-6 py-3 rounded-lg transition">뒤로가기</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
