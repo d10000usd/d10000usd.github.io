@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>유전체 분석 워크플로우</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .arrow {
+    stroke: #38bdf8;
+    stroke-width: 3;
+    fill: none;
+    marker-end: url(#arrowhead);
+  }
+  .step {
+    transition: all 0.3s ease;
+  }
+  .step:hover {
+    transform: translateY(-4px);
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.15));
+  }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+<div class="min-h-screen p-8">
+  <header class="mb-10 text-center">
+    <h1 class="text-4xl font-extrabold bg-gradient-to-r from-emerald-500 to-cyan-500 bg-clip-text text-transparent">AI 유전체 분석 워크플로우</h1>
+    <p class="mt-2 text-slate-600">실시간 파이프라인 진행 상황</p>
+  </header>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Step 1 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
+          <div>
+            <div class="font-semibold text-slate-900">유전체 데이터 수집</div>
+            <div class="text-sm text-slate-500">09:41:09</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">Raw 데이터 캐싱</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">품질 관리 및 검증</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">유전체 정렬</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">변이 탐지 (LangChain)</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">변이 데이터 캐싱</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 7 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">RAG 기반 변이 어노테이션</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 8 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">병원성 예측 분석</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 9 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">약물유전체학 분석</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 10 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">임상 리포트 생성</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+      <svg class="hidden md:block w-12 h-12 text-sky-400" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- Step 11 -->
+    <div class="step col-span-1 md:col-span-3 flex items-center justify-between">
+      <div class="w-full md:w-auto bg-white rounded-2xl p-5 shadow border border-slate-200">
+        <div class="flex items-center gap-3">
+          <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <div>
+            <div class="font-semibold text-slate-900">AI 분석 완료</div>
+            <div class="text-sm text-slate-500">09:41:10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-12 text-center text-slate-500 text-sm">
+    모든 단계가 성공적으로 처리되었습니다.
+  </footer>
+</div>
+</body>
+</html>

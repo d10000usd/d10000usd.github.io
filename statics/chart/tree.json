@@ -76,6 +76,46 @@
             ]
         },
         {
+            "name": "genome_workflow.html",
+            "path": "genome_workflow.html",
+            "type": "file"
+        },
+        {
+            "name": "new_directory",
+            "path": "new_directory",
+            "type": "directory",
+            "children": []
+        },
+        {
+            "name": "news_summary",
+            "path": "news_summary",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "2025-09-26-cfs-employment-alliance.md",
+                    "path": "news_summary/2025-09-26-cfs-employment-alliance.md",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "stock_candles",
+            "path": "stock_candles",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "tech_candles.json",
+                    "path": "stock_candles/tech_candles.json",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "stock_candles.json",
+            "path": "stock_candles.json",
+            "type": "file"
+        },
+        {
             "name": "stock_data.json",
             "path": "stock_data.json",
             "type": "file"
@@ -100,6 +140,40 @@
                 {
                     "name": "append_example.txt",
                     "path": "test/append_example.txt",
+                    "type": "file"
+                },
+                {
+                    "name": "example.txt",
+                    "path": "test/example.txt",
+                    "type": "file"
+                },
+                {
+                    "name": "write_example.txt",
+                    "path": "test/write_example.txt",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "분석현황",
+            "path": "분석현황",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "분석완료현황.txt",
+                    "path": "분석현황/분석완료현황.txt",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "즐디자인",
+            "path": "즐디자인",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "즐_로고.html",
+                    "path": "즐디자인/즐_로고.html",
                     "type": "file"
                 }
             ]
