@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유전체 검사 시퀀스 분석 플랫폼</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .sequence-box {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .pulse-animation {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- 헤더 -->
+    <header class="gradient-bg text-white py-6 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold mb-2">유전체 검사 시퀀스 분석</h1>
+            <p class="text-xl opacity-90">정밀 의학을 위한 차세대 시퀀싱(NGS) 데이터 분석 플랫폼</p>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- 개요 카드 -->
+        <section class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">시퀀스 분석 개요</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-blue-50 rounded-lg">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">30억</div>
+                    <div class="text-gray-600">염기 쌍 분석</div>
+                </div>
+                <div class="text-center p-6 bg-green-50 rounded-lg">
+                    <div class="text-4xl font-bold text-green-600 mb-2">99.9%</div>
+                    <div class="text-gray-600">정확도</div>
+                </div>
+                <div class="text-center p-6 bg-purple-50 rounded-lg">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">24시간</div>
+                    <div class="text-gray-600">분석 시간</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 시퀀스 품질 분석 -->
+        <section class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">시퀀스 품질 분석</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">QC 메트릭스</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span class="font-medium">평균 리드 길이</span>
+                            <span class="text-blue-600 font-bold">150bp</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span class="font-medium">커버리지</span>
+                            <span class="text-green-600 font-bold">30x</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span class="font-medium">Q30 비율</span>
+                            <span class="text-purple-600 font-bold">85%</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span class="font-medium">GC 함량</span>
+                            <span class="text-orange-600 font-bold">42%</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <canvas id="qualityChart" width="400" height="300"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- 변이 분석 결과 -->
+        <section class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">변이 분석 결과</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-red-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-red-800 mb-3">병원성 변이</h3>
+                    <div class="text-3xl font-bold text-red-600 mb-2">12</div>
+                    <div class="text-sm text-red-600">고위험 변이 발견</div>
+                </div>
+                <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-yellow-800 mb-3">미확인 변이</h3>
+                    <div class="text-3xl font-bold text-yellow-600 mb-2">156</div>
+                    <div class="text-sm text-yellow-600">VUS (Variant of Uncertain Significance)</div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-3">약물 반응 관련</h3>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">23</div>
+                    <div class="text-sm text-blue-600">약물 대사 관련 변이</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 시퀀스 시각화 -->
+        <section class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">시퀀스 시각화</h2>
+            <div class="bg-gray-900 p-6 rounded-lg font-mono text-sm">
+                <div class="text-green-400 mb-2">5' ACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTG 3'</div>
+                <div class="text-red-400 mb-2">3' TGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGACTGAC 5'</div>
+                <div class="sequence-box text-xl font-bold text-center mt-4">
+                    ATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGCATGC
+                </div>
+            </div>
+        </section>
+
+        <!-- 분석 파이프라인 -->
+        <section class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">분석 파이프라인</h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <div class="bg-blue-100 px-6 py-3 rounded-full text-blue-800 font-medium pulse-animation">
+                    1. 원시 데이터 품질 확인
+                </div>
+                <div class="bg-green-100 px-6 py-3 rounded-full text-green-800 font-medium">
+                    2. 리드 정제
+                </div>
+                <div class="bg-yellow-100 px-6 py-3 rounded-full text-yellow-800 font-medium">
+                    3. 정렬 (BWA-MEM2)
+                </div>
+                <div class="bg-purple-100 px-6 py-3 rounded-full text-purple-800 font-medium">
+                    4. 변이 검출 (GATK)
+                </div>
+                <div class="bg-red-100 px-6 py-3 rounded-full text-red-800 font-medium">
+                    5. 주석 (ANNOVAR)
+                </div>
+                <div class="bg-indigo-100 px-6 py-3 rounded-full text-indigo-800 font-medium">
+                    6. 보고서 생성
+                </div>
+            </div>
+        </section>
+
+        <!-- 다운로드 섹션 -->
+        <section class="bg-white rounded-lg card-shadow p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">분석 결과 다운로드</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                    FASTQ 파일
+                </button>
+                <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                    BAM 파일
+                </button>
+                <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                    VCF 파일
+                </button>
+                <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                    분석 보고서
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2024 유전체 분석 플랫폼. 차세대 시퀀싱 기술로 정밀 의학을 실현합니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 품질 차트
+        const ctx = document.getElementById('qualityChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+                datasets: [{
+                    label: 'Quality Score',
+                    data: [35, 36, 37, 38, 37, 36, 35, 34, 33, 32],
+                    borderColor: 'rgb(59, 130, 246)',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Per Base Quality Score'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 20,
+                        max: 40
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
