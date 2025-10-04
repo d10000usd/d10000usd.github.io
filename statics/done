@@ -1,0 +1,3 @@
+Python 간단 GA 예제: `import random; pop=[''.join(random.choice('01') for _ in range(10)) for _ in range(20)]; 
+for _ in range(100): pop=sorted(pop,key=lambda s:s.count('1'),reverse=True)[:10]+[pop[i][:5]+pop[i][5:][::-1] for i in range(10)]; 
+print(max(pop,key=lambda s:s.count('1')))`

@@ -1,0 +1,3 @@
+```python
+pop = [random.getrandbits(10) for _ in range(20)]; best = max(pop, key=lambda x: bin(x).count('1'))
+```

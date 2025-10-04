@@ -29,6 +29,11 @@
                     "type": "file"
                 },
                 {
+                    "name": "mcpxhut.md",
+                    "path": "chart/mcpxhut.md",
+                    "type": "file"
+                },
+                {
                     "name": "messages.json",
                     "path": "chart/messages.json",
                     "type": "file"
@@ -36,6 +41,11 @@
                 {
                     "name": "presetConditions.json",
                     "path": "chart/presetConditions.json",
+                    "type": "file"
+                },
+                {
+                    "name": "quickExamples copy.json",
+                    "path": "chart/quickExamples copy.json",
                     "type": "file"
                 },
                 {
@@ -59,6 +69,11 @@
                     "type": "file"
                 },
                 {
+                    "name": "tool.md",
+                    "path": "chart/tool.md",
+                    "type": "file"
+                },
+                {
                     "name": "toolcall.json",
                     "path": "chart/toolcall.json",
                     "type": "file"
@@ -71,43 +86,75 @@
             ]
         },
         {
-            "name": "genome",
-            "path": "genome",
+            "name": "done",
+            "path": "done",
+            "type": "file"
+        },
+        {
+            "name": "generate.md",
+            "path": "generate.md",
+            "type": "file"
+        },
+        {
+            "name": "groq",
+            "path": "groq",
+            "type": "file"
+        },
+        {
+            "name": "load1",
+            "path": "load1",
             "type": "directory",
             "children": [
                 {
-                    "name": "genome_sequencing.html",
-                    "path": "genome/genome_sequencing.html",
+                    "name": "newsfeed.xml",
+                    "path": "load1/newsfeed.xml",
                     "type": "file"
                 }
             ]
         },
         {
-            "name": "genome_mps_animal_test",
-            "path": "genome_mps_animal_test",
+            "name": "load6",
+            "path": "load6",
             "type": "directory",
             "children": [
                 {
-                    "name": "3d_chart.html",
-                    "path": "genome_mps_animal_test/3d_chart.html",
+                    "name": "chart_settings.json",
+                    "path": "load6/chart_settings.json",
                     "type": "file"
                 }
             ]
         },
         {
-            "name": "genomics_polynomial_regression",
-            "path": "genomics_polynomial_regression",
+            "name": "new_directory",
+            "path": "new_directory",
             "type": "directory",
             "children": []
         },
         {
-            "name": "genomics_report",
-            "path": "genomics_report",
+            "name": "openai",
+            "path": "openai",
             "type": "directory",
             "children": [
                 {
-                    "name": "final_expert_consensus_report.md",
-                    "path": "genomics_report/final_expert_consensus_report.md",
+                    "name": "gpt-oss-120b",
+                    "path": "openai/gpt-oss-120b",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "test",
+            "path": "test",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "example.txt",
+                    "path": "test/example.txt",
+                    "type": "file"
+                },
+                {
+                    "name": "write_example.txt",
+                    "path": "test/write_example.txt",
                     "type": "file"
                 }
             ]

@@ -1,0 +1,3 @@
+```python
+pop=[[random.randint(0,1) for _ in range(10)] for _ in range(100)]; best=max(pop,key=lambda x:sum(x))
+```

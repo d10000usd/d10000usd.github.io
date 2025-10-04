@@ -71,7 +71,7 @@
     "tool": "read_file",
     "description": "파일 내용을 읽습니다",
     "arguments": {
-      "path": "/Users/hg/PROxojtuhtuhuht/d10000usd.github.io/public/statics/chart/tool.md"
+      "path": "/Users/hg/PROxojtuhtuhuht/d10000usd.github.io/public/statics/all_stocks.json"
     }
   },
   "create_file": {
